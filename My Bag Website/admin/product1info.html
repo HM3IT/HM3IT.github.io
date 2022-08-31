@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Product Detail Page</title>
+	<link rel="stylesheet" type="text/css" href="./general.css">
+	<link rel="stylesheet" type="text/css" href="./productinfo.css">
+</head>
+<body>
+<!--2. Navigator Bar -->
+		<div class="nav-bar">
+			
+			<p class="logo-name">My Bag Shopping</p>
+			
+			<ul class="nav-link-list">
+				<li class="nav-link"><a href="./adminStudio.html">Home</a></li>
+				<li class="nav-link customer">
+					<a href="./customerManage.html">Manage Customers</a>
+					<ul class="drop-down-list">
+						<li class="drop-down"><a href="./addcustomer.html">Add Customers</a></li>
+						<li class="drop-down"><a href="./customerManage.html">Update Customers</a></li>
+						<li class="drop-down"><a href="./customerManage.html">Delete Customers</a></li>
+					</ul>
+				</li>
+				<li class="nav-link product">
+					<a href="./productManage.html">Manage Products</a>
+					<ul class="drop-down-list product">
+						<li class="drop-down"><a href="./addproduct.html">Add Products</a></li>
+						<li class="drop-down"><a href="./productManage.html">Update Products</a></li>
+						<li class="drop-down"><a href="./productManage.html">Delete Products</a></li>
+					</ul>
+				</li>
+				<li class="nav-link"><a href="../customer/homePage.html">Log out</a></li>
+			</ul>
+		</div>
+
+	<div class="container">
+<!-- Product-detail -->
+		<div class="middle-cover">
+			<div class="product-detail">
+
+				<table cellspacing="5">
+					<tr class="row-1">
+						<td class="col-1">
+							<img class="main-img" src="../photos/Bag1/idle.png">
+						</td>
+
+						<td class="col-2" rowspan="2">
+							<div class="bag-info">
+								<h1>FRONT OFFICE 21 BACKPACK</h2>
+								<hr>
+								<h2>$90.00 USD</h2>
+								<form>
+									<label for="quantity">Quantity remain</label>
+									<input type="number" name="quantity" class="quantity" value="155"> 
+									<input type="radio" name="colors" value="blue">
+									<font class="blue">Blue</font>
+	                                <input type="radio" name="colors" value="red">
+	                                <font class="red">Red</font>
+	                                <input type="radio" name="colors" value="black">
+	                                <font class="black">Black</font> 
+	                                <div class="btn">	                                	
+	                                	<a href="./productmanage.html" class="back-btn">Go back</a>
+	                                	<a href="./updateProduct.html" class="update-btn">Update</a>
+	                                </div>
+								</form>	
+
+								<h4>Product Details</h4>
+
+									<p class="bag-detail"> 
+										Mizuno's Front Office 21 Backpack was designed with comfort and versatility in mind for those who live their life both in and out of sports. Designed with an adjustable, padded shoulder straps and padded back for superior comfort. Made to fit your laptop, it includes a 17" computer sleeve, and multiple storage compartments. A water pouch and customization area for embroidery makes this a great backpack option.
+									</p>
+
+							</div>
+						</td>
+					</tr>
+					<tr class="row-2">
+						<td class="col-1">							  
+								<img class="mini-img front" src="../photos/Bag1/front.jpg">												
+								<img class="mini-img side" src="../photos/Bag1/side.jpg">													
+								<img class="mini-img back" src="../photos/Bag1/back.jpg">							
+						</td>																		
+					</tr>
+				</table>
+
+				
+			</div>		
+		</div>
+	</div>
+		
+<!--7.Footer section  -->
+		<footer class="footer">
+			<div class="footer-row">
+				<div class="footer-col">
+					<ul class="footer-links">
+						<li><h3>My Bag Shopping</h3></li>
+						<li>Product Store</li>
+						<li><img class="store" src="../photos/appstore.png"></li>
+						<li><img class="store" src="../photos/googlestore.png"></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<ul class="footer-links">
+						<li><h3>EXPLORE</h3></li>
+						<li><a href="./homePage.html">HOME</a></li>
+						<li><a href="./homePage.html">Products</a>  </li>
+						<li><a href="./homePage.html">Subscribe</a>  </li>
+						<li><a href="./homePage.html">New featured</a>  </li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<ul class="footer-links">
+						<li><h3>Our service</h3></li>
+						<li>Free Service</li>
+						<li>Giveaway</li>
+						<li>Gift Cards</li>
+					</ul>
+				</div>
+				<div class="social-media">
+					<a href="#"><img class="fbicon" src="../photos/fbicon1.jpg"></a>
+					<a href="#"><img class="instagramicon" src="../photos/instagramicon.png"></a>
+					<a href="#"><img class="twittericon" src="../photos/twittericon.jpg"></a>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,148 @@
+/* ####################  
+       Contents 
+
+1.Global properties
+2.Navigator Bar properties
+3.Footer section properties
+
+#####################  */
+
+
+ /*#################
+    Global properties
+   ################*/
+body{
+	font-family:'Open Sans',sans-serif,'Times New Roman';
+	margin: 0;
+	padding:0;
+}
+
+ul{ list-style-type: none;}
+
+a{ text-decoration: none;}
+
+.container{
+	background-color: #F0F1F3;		
+}
+
+/* ####################
+  Navigator Bar properties
+ ##################### */
+ .nav-bar{
+ 	height: 75px;
+ 	background-color: white;
+ 	box-shadow:0 5px 10px black;
+ }
+ .logo-name{
+ 	float: left;
+ 	font-size: 20px;
+ 	padding: 5px 20px;
+ }
+
+ .nav-link-list,.drop-down-list
+ {
+ 	float: left;
+ }
+ .nav-link-list{
+   margin: 0;
+ }
+ .nav-link,.drop-down{
+	float: left;
+}
+.nav-link a{
+	display: block;
+	color: black;
+	padding: 28px 20px;
+}
+.nav-link a:hover{
+   color: white;
+   background-color: black;
+}
+/*customer and product drop-down properties*/
+.customer,.product{
+	position: relative;
+}
+.drop-down-list{
+	display: none;
+	position: absolute;
+	background-color: white;
+	padding:0;
+}
+.drop-down{
+	width: 180px;
+}
+.drop-down a{
+	padding: 15px 20px;	
+}
+.customer:hover>.drop-down-list{
+	display: block;
+}
+.product:hover>.drop-down-list{
+	display: block;
+}
+.drop-down a:hover{
+   color: white;
+   background-color: black;
+}
+
+ /* ###################
+Footer section properties
+################### */
+
+.footer{
+	width: 100%;
+	height: 260px;
+	color: white;
+	background-color: #101010;
+}
+.footer-row{
+	margin:0 auto;
+}
+.footer-col{
+	float: left;
+	width: 300px;
+	padding: 20px;
+}
+.store{
+	width: 150px;
+	height: 40px;
+}
+.footer-links li:first-child{
+	color: white;
+}
+.footer-links li{
+	margin:10px 0;
+	color: #606060;
+}
+.footer-links li a{
+	color: #606060;
+}
+.footer-links li a:hover{
+	color: white;
+}
+
+/*social media icons properties*/
+
+.social-media{
+  padding-top: 75px;
+}
+.social-media a img{
+  margin:0 10px;
+}
+.social-media a img:hover{
+   border: 2px solid white;
+   border-radius: 50px;
+}
+
+.twittericon{
+	width: 75px;
+	height: 75px;
+}
+.fbicon{
+	width: 80px;
+	height: 80px;
+}
+.instagramicon{
+	width: 80px;
+	height: 80px;
+}

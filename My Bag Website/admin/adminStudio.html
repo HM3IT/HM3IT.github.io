@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Admin Studio Page</title>
+	<link rel="stylesheet" type="text/css" href="./general.css">
+	<link rel="stylesheet" type="text/css" href="./adminStudio.css">
+</head>
+<body>
+	<div class="container">
+<!--2. Navigator Bar -->
+		<div class="nav-bar">
+			
+			<p class="logo-name">My Bag Shopping</p>
+			
+			<ul class="nav-link-list">
+				<li class="nav-link"><a href="./adminStudio.html">Home</a></li>
+				<li class="nav-link customer">
+					<a href="./customerManage.html">Manage Customers</a>
+					<ul class="drop-down-list">
+						<li class="drop-down"><a href="./addcustomer.html">Add Customers</a></li>
+						<li class="drop-down"><a href="./customerManage.html">Update Customers</a></li>
+						<li class="drop-down"><a href="./customerManage.html">Delete Customers</a></li>
+					</ul>
+				</li>
+				<li class="nav-link product">
+					<a href="./productManage.html">Manage Products</a>
+					<ul class="drop-down-list product">
+						<li class="drop-down"><a href="./addproduct.html">Add Products</a></li>
+						<li class="drop-down"><a href="./productManage.html">Update Products</a></li>
+						<li class="drop-down"><a href="./productManage.html">Delete Products</a></li>
+					</ul>
+				</li>
+				<li class="nav-link"><a href="../customer/homePage.html">Log out</a></li>
+			</ul>
+		</div>
+		
+<!-- cotent -->
+		<div class="content">
+			<!-- daily-checking -->
+			<div class="daily-check">
+				<p class="daily-title">Daily History</p>
+				<div class="cards-blog">
+			<!-- view-card	 -->
+					<div class="daily-view">
+						<table class="tb-1" cellspacing="0">
+							<tr>
+								<td class="view-count">1255</td>
+								<td rowspan="2">
+									<img class="view-card" alt="photo" src="../photos/Adminsite/viewicon.png">
+								</td>
+							</tr>
+							<tr>
+								<td class="view-info">Daily Views</td>
+							</tr>
+						</table>
+					</div>
+					<!-- sale card -->
+					<div class="daily-sale">
+						<table class="tb-2" cellspacing="0">
+							<tr>
+								<td class="sale-count">77</td>
+								<td rowspan="2">
+									<img class="sale-card" alt="photo" src="../photos/Adminsite/sale-card.png">
+								</td>
+							</tr>
+							<tr>
+								<td class="sale-info">Daily sales</td>
+							</tr>
+						</table>
+					</div>
+					<!-- income card -->
+					<div class="daily-income">
+						<table class="tb-3" cellspacing="0">
+							<tr>
+								<td class="income-count">$ 1299</td>
+								<td rowspan="2">
+									<img class="sale-card" alt="photo" src="../photos/Adminsite/income.png">
+								</td>
+							</tr>
+							<tr>
+								<td class="income-info">Daily income</td>
+							</tr>
+						</table>
+					</div>
+					<!-- Customer members -->
+					<div class="daily-income">
+						<table class="tb-4" cellspacing="0">
+							<tr>
+								<td class="customer-member">2400</td>
+								<td rowspan="2">
+									<img class="customer-member-card" alt="photo" src="../photos/Adminsite/customer.png">
+								</td>
+							</tr>
+							<tr>
+								<td class="customer-member-info">Customer members</td>
+							</tr>
+						</table>
+					</div>
+					<!-- Remaining products -->
+					<div class="daily-income">
+						<table class="tb-5" cellspacing="0">
+							<tr>
+								<td class="remain-product-count">4000</td>
+								<td rowspan="2">
+									<img class="remain-product-card" alt="photo" src="../photos/Adminsite/remain-product.png">
+								</td>
+							</tr>
+							<tr>
+								<td class=".remain-product-info">Remaining products</td>
+							</tr>
+						</table>
+					</div>
+
+				</div>	
+			</div>
+			
+<!-- sale recent history  -->
+			<div class="sale-history">
+	 <!-- table-side-->
+				<div class="table-side">
+					<div class="tb-title">Recent Orders 
+						<a href="./productmanage.html">View Details</a>
+					</div>				
+					<table class="tb-sale-history" cellspacing="0">
+						<tr class="tb-sale-header">
+							<th class="name">Name</th>
+							<th class="revenue">revenue</th>
+							<th class="boutght-time">Date Time</th>
+						</tr>
+						<tr class="tb-row">
+							<td class="name">Hein Min Maw</td>
+							<td class="revenue">$ 749.99</td>
+							<td class="bought-time">
+								<form>
+									<input type="datetime-local" class="bought-date"
+									name="bought-date" value="2021-09-29T17:00">
+								</form>
+							</td>
+						</tr>
+						<tr class="tb-row">
+							<td class="name">Elizbard </td>
+							<td class="revenue">$ 500</td>
+							<td class="bought-time">
+								<form>
+									<input type="datetime-local" class="bought-date"
+									name="bought-date" value="2021-09-29T14:00">
+								</form>
+							</td>
+						</tr>
+						<tr class="tb-row">
+							<td class="name">Marie</td>
+							<td class="revenue">$ 120</td>
+							<td class="bought-time">
+								<form>
+									<input type="datetime-local" class="bought-date"
+									name="bought-date" value="2021-09-29T10:00">
+								</form>
+							</td>
+						</tr>
+						<tr class="tb-row">
+							<td class="name">Elisa Tesla</td>
+							<td class="revenue">$ 89.99</td>
+							<td class="bought-time">
+								<form>
+									<input type="datetime-local" class="bought-date"
+									name="bought-date" value="2021-09-28T22:00">
+								</form>
+							</td>
+						</tr>
+						<tr class="tb-row">
+							<td class="name">Steven Derik</td>
+							<td class="revenue">$ 1200</td>
+							<td class="bought-time">
+								<form>
+									<input type="datetime-local" class="bought-date"
+									name="bought-date" value="2021-09-28T11:00">
+								</form>
+							</td>
+						</tr>
+						<tr class="tb-row">
+							<td class="name">Thiha</td>
+							<td class="revenue">$ 700</td>
+							<td class="bought-time">
+								<form>
+									<input type="datetime-local" class="bought-date"
+									name="bought-date" value="2021-09-28T08:30">
+								</form>
+							</td>
+						</tr>
+						<tr class="tb-row">
+							<td class="name">Thurein</td>
+							<td class="revenue">$ 244.99</td>
+							<td class="bought-time">
+								<form>
+									<input type="datetime-local" class="bought-date"
+									name="bought-date" value="2021-09-26T11:00">
+								</form>
+							</td>
+						</tr>
+						<tr class="tb-row">
+							<td class="name">Oak Paing</td>
+							<td class="revenue">$ 1200</td>
+							<td class="bought-time">
+								<form>
+									<input type="datetime-local" class="bought-date"
+									name="bought-date" value="2021-09-26T07:00">
+								</form>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="4">
+								<a href="./productmanage.html" class="viewmore">
+									View All
+                                </a>
+                            </td>
+						</tr>
+					</table>
+				</div>
+
+    <!-- customer-side -->
+				<div class="customer-side">
+					<div class="customer-blog">
+						<div class="customer-tb-title">Recent customer</div>
+						<table class="tb-customer">
+							<tr class="customer-row">
+								<td class="profile">							
+									<div class="profile1"></div>
+								</td>
+								<td class="name">Hein Min Maw</td>
+							</tr>
+							<tr class="customer-row">
+								<td class="profile">
+									<div class="profile2"></div>
+								</td>
+								<td class="name">Elizbard</td>
+							</tr>
+							<tr class="customer-row">
+								<td class="profile">
+									<div class="profile3"></div>
+								</td>
+								<td class="name">Marie</td>
+							</tr>
+							<tr class="customer-row">
+								<td class="profile">
+								    <div class="profile4"></div>
+								</td>
+								<td class="name">Elisa Tesla</td>
+							</tr>
+							<tr class="customer-row">
+								<td class="profile">
+									<div class="profile5"></div>
+								</td>
+								<td class="name">Steven Derik</td>
+							</tr>
+							<tr class="customer-row addtion">
+								<td colspan="2" class="viewmore-row">
+									<a href="./customerManage.html" class="viewmore">Veiw All</a>
+								 </td>
+							</tr>
+
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+<!--7.Footer section  -->
+		<footer class="footer">
+			<div class="footer-row">
+				<div class="footer-col">
+					<ul class="footer-links">
+						<li><h3>My Bag Shopping</h3></li>
+						<li>Product Store</li>
+						<li><img class="store" src="../photos/appstore.png"></li>
+						<li><img class="store" src="../photos/googlestore.png"></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<ul class="footer-links">
+						<li><h3>EXPLORE</h3></li>
+						<li><a href="./homePage.html">HOME</a></li>
+						<li><a href="./homePage.html">Products</a>  </li>
+						<li><a href="./homePage.html">Subscribe</a>  </li>
+						<li><a href="./homePage.html">New featured</a>  </li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<ul class="footer-links">
+						<li><h3>Our service</h3></li>
+						<li>Free Service</li>
+						<li>Giveaway</li>
+						<li>Gift Cards</li>
+					</ul>
+				</div>
+				<div class="social-media">
+					<a href="#"><img class="fbicon" src="../photos/fbicon1.jpg"></a>
+					<a href="#"><img class="instagramicon" src="../photos/instagramicon.png"></a>
+					<a href="#"><img class="twittericon" src="../photos/twittericon.jpg"></a>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

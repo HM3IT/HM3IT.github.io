@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Update Customer information Page</title>
+	<link rel="stylesheet" type="text/css" href="./general.css">
+	<link rel="stylesheet" type="text/css" href="./updatecustomer.css">
+</head>
+<body>
+<!--2. Navigator Bar -->
+		<div class="nav-bar">
+			
+			<p class="logo-name">My Bag Shopping</p>
+			
+			<ul class="nav-link-list">
+				<li class="nav-link"><a href="./adminStudio.html">Home</a></li>
+				<li class="nav-link customer">
+					<a href="./customerManage.html">Manage Customers</a>
+					<ul class="drop-down-list">
+						<li class="drop-down"><a href="./addcustomer.html">Add Customers</a></li>
+						<li class="drop-down"><a href="./customerManage.html">Update Customers</a></li>
+						<li class="drop-down"><a href="./customerManage.html">Delete Customers</a></li>
+					</ul>
+				</li>
+				<li class="nav-link product">
+					<a href="./productManage.html">Manage Products</a>
+					<ul class="drop-down-list product">
+						<li class="drop-down"><a href="./addproduct.html">Add Products</a></li>
+						<li class="drop-down"><a href="./productManage.html">Update Products</a></li>
+						<li class="drop-down"><a href="./productManage.html">Delete Products</a></li>
+					</ul>
+				</li>
+				<li class="nav-link"><a href="../customer/homePage.html">Log out</a></li>
+			</ul>
+		</div>
+
+	<div class="container">
+        <form class="update-form">
+        	<h1 class="form-title">Update Customer</h1>
+        	<label for="name">Customer name</label>
+        	<input type="text" name="customer-name" value="Hein Min Maw" class="name">
+
+        	<label for="items">Purchase Items</label>
+        	<input type="text" name="items-1" value="1. FRONT OFFICE 21 BACKPACK" class="items">  
+            <input type="text" name="items-2" value="2. Business Travel Anti Theft Slim Durable Laptops Backpack " class="items">
+            <input type="text" name="items-2" placeholder="optional" class="add-item">     
+            	<a class="add-btn" href="#">Add item</a>      
+
+        <div class="joint">
+        	<label for="date">Bought Date</label>
+	        	<input type="datetime-local" class="bought-date" name="bought-date" value="2021-09-29T17:00" class="date-time">
+        	<label>Revenue</label>
+        	    <input type="text" name="Revenue" class="revenue" value="599">
+        </div>
+        	
+        	<a href="./customerManage.html" class="update-btn">Update product</a>
+        	
+        </form>
+
+	</div>
+		
+<!--7.Footer section  -->
+		<footer class="footer">
+			<div class="footer-row">
+				<div class="footer-col">
+					<ul class="footer-links">
+						<li><h3>My Bag Shopping</h3></li>
+						<li>Product Store</li>
+						<li><img class="store" src="../photos/appstore.png"></li>
+						<li><img class="store" src="../photos/googlestore.png"></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<ul class="footer-links">
+						<li><h3>EXPLORE</h3></li>
+						<li><a href="./homePage.html">HOME</a></li>
+						<li><a href="./homePage.html">Products</a>  </li>
+						<li><a href="./homePage.html">Subscribe</a>  </li>
+						<li><a href="./homePage.html">New featured</a>  </li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<ul class="footer-links">
+						<li><h3>Our service</h3></li>
+						<li>Free Service</li>
+						<li>Giveaway</li>
+						<li>Gift Cards</li>
+					</ul>
+				</div>
+				<div class="social-media">
+					<a href="#"><img class="fbicon" src="../photos/fbicon1.jpg"></a>
+					<a href="#"><img class="instagramicon" src="../photos/instagramicon.png"></a>
+					<a href="#"><img class="twittericon" src="../photos/twittericon.jpg"></a>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

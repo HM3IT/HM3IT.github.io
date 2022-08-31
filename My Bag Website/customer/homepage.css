@@ -1,0 +1,233 @@
+/* ####################  
+       Contents 
+
+1.Header cover properties
+2.slide cover properties
+3.post card properties
+4.Middle cover properties
+
+#####################  */
+
+
+ 
+/* ###############
+Header cover properties
+############## */
+.header-cover{
+	background-color:#ffdad1;
+	width: 100%;
+    height: 620px;
+}
+.cover-img{
+	width: 50%;
+	height: 100%;
+}
+.cover1,.cover2{
+	display:block;
+	float:left;
+	}
+.cover-img,.cover-info{
+	float:left;
+}
+.cover1{
+	width: 50%;
+	height:620px;
+}
+.cover2{
+	width: 50%;
+    height:620px;
+}
+.cover-info{
+	width: 50%;
+	height:620px;
+	
+}
+.cover-title{
+	position: sticky;
+	font-size: 25px;
+	letter-spacing: 5px;
+	top: 50%;
+    left: 50%;
+}
+
+/* ################
+slide cover properties
+############## */
+
+.slide-cover{
+	
+	width: 100%;
+	height: 780px;
+	background-color: #353736;
+}
+.featured{
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+	font-size: 35px;
+	font-weight: bold;
+	color: white;
+	letter-spacing: 10px;
+	
+}
+.slide-box{
+	height: 540px;
+	border-top: 2px solid #F0F1F3;
+	border-bottom: 2px solid #F0F1F3;
+}
+.slide{ 	
+	width: 25%; 
+	height: 100%;
+}
+.sl1,.sl2,.sl3,.sl4{
+	background-size: cover;
+	float: left;
+}
+.sl1{ background-image: url("../photos/Slide/footerCover1.jpg"); }
+.sl2{ background-image: url("../photos/Slide/footerCover2.jpg"); }
+.sl3{ background-image: url("../photos/Slide/footerCover3.jpg"); }
+.sl4{ background-image: url("../photos/Slide/footerCover4.jpg"); }
+
+.shadow{
+	display:inline-block;
+	float: left;
+	width: 100%; 
+	height: 540px;
+	background-color:rgb(0,0,0);
+	opacity: 0;
+	color:  #FAFAFF;
+	letter-spacing: 5px;
+	text-align: center;
+	line-height: 540px;		
+}
+
+.sl1:hover>.shadow{
+   opacity: 0.8;
+}
+.sl2:hover>.shadow{
+   opacity: 0.8;
+}
+.sl3:hover>.shadow{
+   opacity: 0.8;
+}
+.sl4:hover>.shadow{
+   opacity: 0.8;
+}
+.sl-link{
+	color: white;
+}
+
+
+/* ##################
+post card properties
+####################*/
+
+.post-section{
+	height: 1000px;
+	padding:20px;
+	background-color: #FAFAFF;
+}
+
+.post{
+	position: relative;
+	width: 280px;
+	height: 450px;
+	background-color: #F0F1F3;
+	margin:20px 15px;
+	float:left;
+	box-shadow: 3px 5px 5px black;
+}
+.best-sell{
+	position: absolute;
+	top: 0;
+	left:0;
+	color: white;	
+	padding: 5px 10px;
+	border-radius:0 10px 0 10px;
+	background-color:orange;
+}
+.post-img{
+	display: block;
+	width: 260px;
+	height: 280px;
+	margin:0 auto;
+}
+.star{
+	width: 75px;
+	height: 15px;
+	display: inline-block;
+}
+.star img{
+	width: 15px;
+	height: 15px;
+	float: left;
+}
+.post-info{
+	width:280px;
+	height: 120px;
+	padding: 10px;
+	font-size: 15px;
+	text-align: left;
+}
+.post-link{
+	text-decoration: underline;
+	color: #D2321E;
+}
+.post-btn{
+	width: 100%;
+	padding: 5px 10px;
+	background-color:#ff5a36;
+	border-radius:5px; 
+	border-color:#ff5a36;
+}
+.post-btn>a{color: white;}
+
+.post-btn:hover{background-color: #D2321E;}
+
+.view-product{
+	clear: both;
+	text-align: center;
+}
+.view-product>a{
+	color: #D2321E;
+}
+
+/* ################
+Middle cover properties
+################# */
+.middle-cover{
+ width: 100%;
+ height: 310px;
+ background-image:url('../photos/middleCover.jpg');
+ background-repeat:no-repeat;
+ background-position:center;
+ background-size: cover;
+ text-align: center;
+
+}
+.offer{
+	padding: 30px 10px;
+	color:  #FAFAFF;
+	background-color:rgba(0,0,0,0.5);
+    height: 250px;
+}
+.offer-title{
+    letter-spacing:10px;
+    text-transform: uppercase;
+}
+.email{
+	width: 280px;
+	height: 30px;
+	text-align: center;
+}
+.sub-btn{
+	padding: 10px 20px;
+	color:  #FAFAFF;
+	background-color: #ff5a36;
+	border:1px solid #ff5a36;
+	border-radius: 25px;
+	font-size: 17px;
+}
+.sub-btn:hover{
+	background-color: #D2321E;
+}

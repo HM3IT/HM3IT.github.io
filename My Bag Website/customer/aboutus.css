@@ -1,0 +1,63 @@
+.content{
+	height: 760px;
+}
+.aboutus{
+	width: 720px;
+	height: 640px;
+	margin:10px auto;
+	padding: 25px;
+	background-color: white;
+	box-shadow: 5px 5px 10px black;
+}
+.aboutus-title{
+	color:#ff5a36 ;
+	text-align: center;
+	letter-spacing: 5px;
+	text-decoration: underline;
+}
+.logo-blog{
+	height: 150px;
+}
+.logoimg{
+	width: 220px;
+	height: 150px;
+	box-shadow: 2px 5px 5px black;
+}
+.vision{
+	width: 480px;
+	height: 150px;
+	line-height: 150px;
+	letter-spacing: 5px;
+	font-family:'Sans-serif','Times New Roman';
+	font-size: 25px;
+	color: #373532 ;
+	margin-left: 20px;
+}
+.left{
+	float: left;
+}
+.blog{ float: left; }
+.mission{
+	color:  #D2321E;
+	font-size:22px ;
+}
+.para-1{
+	text-indent: 30px; 
+	line-height: 30px;
+}
+
+.details-blog{ 
+	width: 340px;
+	line-height: 30px;
+	margin-right: 20px;
+ }
+
+.img-blog,.fb-page-img
+{
+	width: 300px;
+	height: 260px; 
+}
+
+.aboutus-details{
+	text-align: justify;
+}

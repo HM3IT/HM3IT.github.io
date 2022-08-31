@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Customer Management Page</title>
+	<link rel="stylesheet" type="text/css" href="./general.css">
+	<link rel="stylesheet" type="text/css" href="./customermanage.css">
+</head>
+<body>
+<!--2. Navigator Bar -->
+		<div class="nav-bar">
+			
+			<p class="logo-name">My Bag Shopping</p>
+			
+			<ul class="nav-link-list">
+				<li class="nav-link"><a href="./adminStudio.html">Home</a></li>
+				<li class="nav-link customer">
+					<a href="./customerManage.html">Manage Customers</a>
+					<ul class="drop-down-list">
+						<li class="drop-down"><a href="./addcustomer.html">Add Customers</a></li>
+						<li class="drop-down"><a href="./customerManage.html">Update Customers</a></li>
+						<li class="drop-down"><a href="./customerManage.html">Delete Customers</a></li>
+					</ul>
+				</li>
+				<li class="nav-link product">
+					<a href="./productManage.html">Manage Products</a>
+					<ul class="drop-down-list product">
+						<li class="drop-down"><a href="./addproduct.html">Add Products</a></li>
+						<li class="drop-down"><a href="./productManage.html">Update Products</a></li>
+						<li class="drop-down"><a href="./productManage.html">Delete Products</a></li>
+					</ul>
+				</li>
+				<li class="nav-link"><a href="../customer/homePage.html">Log out</a></li>
+			</ul>
+		</div>
+
+	<div class="container">
+         <!-- table-side-->
+				<div class="table-side">
+					<div class="tb-title">Customer Orders 
+					    <a class="addcustomer" href="./addcustomer.html">Add new customer</a>						
+					</div>				
+					<table class="tb-sale-history" cellspacing="0">
+						<tr class="tb-sale-header">
+							<th class="name">Name</th>
+							<th class="items">Purchase Items</th>
+							<th class="revenue">Revenue</th>
+							<th class="boutght-time">Date Time</th>
+							<th class="delivery">Deliver check</th>
+							<th class="btn-col">
+								Action
+							</th>
+						</tr>
+						<tr class="tb-row">
+							<td class="name">Hein Min Maw</td>
+							<td class="items">
+								<ol class="item-lists">
+									<li>FRONT OFFICE 21 BACKPACK</li>
+									<li>Business Travel Anti Theft Slim Durable Laptops Backpack</li>
+								</ol>
+							</td>
+							<td class="revenue">$ 749.99</td>
+							<td class="bought-time">						
+									<input type="datetime-local" class="bought-date"
+									name="bought-date" value="2021-09-29T17:00">
+							</td>
+							<td class="delivery">
+								<input type="checkbox" name="checkbox" checked>
+							</td>
+							<td class="btn-col">
+								
+								<a class="update-btn" href="./updatecustomer.html">Update</a>
+								<a class="delete-btn" href="#">Delete</a>
+							</td>
+						</tr>
+						<tr class="tb-row">
+							<td class="name">Elizbard </td>
+							<td class="items">
+								<ol class="item-lists">
+									<li>FRONT OFFICE 21 BACKPACK</li>
+									<li>LIGHT FLIGHT Laptop Backpack</li>
+									<li>Carhartt Legacy Standard Work Backpack</li>
+								</ol>
+							</td>
+							<td class="revenue">$ 900</td>
+							<td class="bought-time">
+									<input type="datetime-local" class="bought-date"
+									name="bought-date" value="2021-09-29T14:00">
+							</td>
+							<td class="delivery">
+								<input type="checkbox" name="checkbox" checked>
+							</td>
+							<td class="btn-col">						
+								<a class="update-btn" href="./updatecustomer.html">Update</a>
+								<a class="delete-btn" href="#">Delete</a>
+							</td>
+						</tr>
+						<tr class="tb-row">
+							<td class="name">Marie</td>
+							<td class="items">
+								<ol class="item-lists">
+									<li>LIGHT FLIGHT Laptop Backpack</li>
+									<li>FRONT OFFICE 21 BACKPACK</li>							
+								</ol>
+							</td>
+							<td class="revenue">$ 120</td>
+							<td class="bought-time">
+									<input type="datetime-local" class="bought-date"
+									name="bought-date" value="2021-09-29T10:00">
+							</td>
+							<td class="delivery">
+								<input type="checkbox" name="checkbox" checked>
+							</td>
+							<td class="btn-col">
+								
+								<a class="update-btn" href="./updatecustomer.html">Update</a>
+								<a class="delete-btn" href="#">Delete</a>
+							</td>
+						</tr>
+						<tr class="tb-row">
+							<td class="name">Elisa Tesla</td>
+							<td class="items">
+								<ol class="item-lists">
+									<li>FRONT OFFICE 21 BACKPACK</li>
+									<li>Carhartt Legacy Standard Work Backpack</li>
+								</ol>
+							</td>
+							<td class="revenue">$ 89.99</td>
+							<td class="bought-time">								
+									<input type="datetime-local" class="bought-date"
+									name="bought-date" value="2021-09-28T22:00">
+							</td>
+							<td class="delivery">
+								<input type="checkbox" name="checkbox" checked>
+							</td>
+							<td class="btn-col">
+								
+								<a class="update-btn" href="./updatecustomer.html">Update</a>
+								<a class="delete-btn" href="#">Delete</a>
+							</td>
+						</tr>
+						<tr class="tb-row">
+							<td class="name">Steven Derik</td>
+							<td class="items">
+								<ol class="item-lists">
+									<li>Carhartt Legacy Standard Work Backpack</li>
+									<li>LIGHT FLIGHT Laptop Backpack</li>
+									<li>FRONT OFFICE 21 BACKPACK</li>
+								</ol>
+							</td>
+							<td class="revenue">$ 1200</td>
+							<td class="bought-time">
+									<input type="datetime-local" class="bought-date"
+									name="bought-date" value="2021-09-28T11:00">
+							</td>
+							<td class="delivery">
+								<input type="checkbox" name="checkbox" checked>
+							</td>
+							<td class="btn-col">
+								
+								<a class="update-btn" href="./updatecustomer.html">Update</a>
+								<a class="delete-btn" href="#">Delete</a>
+							</td>
+						</tr>
+						<tr class="tb-row">
+							<td class="name">Thiha</td>
+							<td class="items">
+								<ol class="item-lists">
+									<li>FRONT OFFICE 21 BACKPACK</li>
+									<li>Carhartt Legacy Standard Work Backpack</li>
+								</ol>
+							</td>
+							<td class="revenue">$ 700</td>
+							<td class="bought-time">						
+									<input type="datetime-local" class="bought-date"
+									name="bought-date" value="2021-09-28T08:30">	
+							</td>
+							<td class="delivery">
+								<input type="checkbox" name="checkbox" checked>
+							</td>
+							<td class="btn-col">
+								
+								<a class="update-btn" href="./updatecustomer.html">Update</a>
+								<a class="delete-btn" href="#">Delete</a>
+							</td>
+						</tr>
+						<tr class="tb-row">
+							<td class="name">Thurein</td>
+							<td class="items">
+								<ol class="item-lists">
+									<li>FRONT OFFICE 21 BACKPACK</li>
+									<li>Business Travel Anti Theft Slim Durable Laptops Backpack</li>
+								</ol>
+							</td>
+							<td class="revenue">$ 244.99</td>
+							<td class="bought-time">		
+									<input type="datetime-local" class="bought-date"
+									name="bought-date" value="2021-09-26T11:00">
+							</td>
+							<td class="delivery">
+								<input type="checkbox" name="checkbox" checked>
+							</td>
+							<td class="btn-col">
+								
+								<a class="update-btn" href="./updatecustomer.html">Update</a>
+								<a class="delete-btn" href="#">Delete</a>
+							</td>
+						</tr>
+						<tr class="tb-row">
+							<td class="name">Oak Paing</td>
+							<td class="items">
+								<ol class="item-lists">
+									<li>Carhartt Legacy Standard Work Backpack</li>
+									<li>Business Travel Anti Theft Slim Durable Laptops Backpack</li>
+								</ol>
+							</td>
+							<td class="revenue">$ 1200</td>
+							<td class="bought-time">							
+									<input type="datetime-local" class="bought-date"
+									name="bought-date" value="2021-09-26T07:00">						
+							</td>
+							<td class="delivery">
+								<input type="checkbox" name="checkbox" checked>
+							</td>
+							<td class="btn-col">
+								
+								<a class="update-btn" href="./updatecustomer.html">Update</a>
+								<a class="delete-btn" href="#">Delete</a>
+							</td>
+						</tr>
+						<tr id="last-row">
+							<td colspan="6">
+								<a href="#" class="viewmore">
+									View All
+                                </a>
+                            </td>
+						</tr>
+					</table>
+				</div>
+	</div>
+		
+<!--7.Footer section  -->
+		<footer class="footer">
+			<div class="footer-row">
+				<div class="footer-col">
+					<ul class="footer-links">
+						<li><h3>My Bag Shopping</h3></li>
+						<li>Product Store</li>
+						<li><img class="store" src="../photos/appstore.png"></li>
+						<li><img class="store" src="../photos/googlestore.png"></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<ul class="footer-links">
+						<li><h3>EXPLORE</h3></li>
+						<li><a href="./homePage.html">HOME</a></li>
+						<li><a href="./homePage.html">Products</a>  </li>
+						<li><a href="./homePage.html">Subscribe</a>  </li>
+						<li><a href="./homePage.html">New featured</a>  </li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<ul class="footer-links">
+						<li><h3>Our service</h3></li>
+						<li>Free Service</li>
+						<li>Giveaway</li>
+						<li>Gift Cards</li>
+					</ul>
+				</div>
+				<div class="social-media">
+					<a href="#"><img class="fbicon" src="../photos/fbicon1.jpg"></a>
+					<a href="#"><img class="instagramicon" src="../photos/instagramicon.png"></a>
+					<a href="#"><img class="twittericon" src="../photos/twittericon.jpg"></a>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

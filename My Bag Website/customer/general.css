@@ -1,0 +1,154 @@
+/* ####################  
+       Contents 
+
+1.Global properties
+2.Navigator Bar properties
+3.Footer section properties
+
+#####################  */
+
+
+ /*#################
+    Global properties
+   ################*/
+body{
+	font-family:'Open Sans',sans-serif,'Times New Roman';
+	margin: 0;
+	padding:0;
+}
+
+ul{ list-style-type: none;}
+
+a{ text-decoration: none;}
+
+.container{
+	background-color: #F0F1F3;		
+}
+
+/* ####################
+  Navigator Bar properties
+ ##################### */
+ .nav-bar{
+ 	/*position: sticky;
+ 	top: 0;*/
+ 	height: 75px;
+ 	margin-bottom: 5px;
+ 	background-color: #F0F1F3;
+
+ }
+.logo{
+	width: 640px;
+	height: 75px;
+}
+ .logo-img{
+ 	margin-left:80px;
+ 	width: 200px;
+ 	height:75px;	
+ }
+
+ .nav-link-bar{
+ 	width: 600px;
+ }
+
+ .logo,.nav-link-bar{
+ 	float:left;
+ }
+ 
+ .nav-link-lists{
+ 	padding: 0;
+ 	margin: 0;
+ }
+
+ .nav-link{
+ 	display:inline-block;
+ 	width:110px;
+ 	height:75px;
+ 	line-height:75px;
+ 	text-align:center;
+ 	cursor: pointer;
+ }
+
+ .nav-link a{
+ 	color:#ff5a36;
+ 	font-size: 17px;
+ 	font-weight: bold;
+ }
+
+ .nav-link:hover>a{
+   color:#D2321E;
+ }
+ .nav-link:hover{
+ 	border-bottom: 3px solid #f05735;
+ }
+ /*shopping-card properties*/
+
+  .shopping{
+ 	width:40px;
+ 	height: 40px;
+ 	float: left;
+ }
+ .shopping-card{
+ 	width: 70px;
+ 	height:70px;
+ }
+
+ /* ###################
+Footer section properties
+################### */
+
+.footer{
+	height: 260px;
+	color: white;
+	background-color: #101010;
+}
+.footer-row{
+	margin:0 auto;
+}
+.footer-col{
+	float: left;
+	width: 300px;
+	padding: 20px;
+}
+.store{
+	width: 150px;
+	height: 40px;
+}
+.footer-links li:first-child{
+	color: white;
+}
+.footer-links li{
+	margin:10px 0;
+	color: #606060;
+}
+.footer-links li a{
+	color: #606060;
+}
+.footer-links li a:hover{
+	color: white;
+}
+
+/*social media icons properties*/
+
+.social-media{
+  padding-top: 75px;
+}
+.social-media a img{
+  margin:0 10px;
+}
+.social-media a img:hover{
+   border: 2px solid white;
+   border-radius: 50px;
+}
+
+.twittericon{
+	width: 75px;
+	height: 75px;
+}
+.fbicon{
+	width: 80px;
+	height: 80px;
+}
+.instagramicon{
+	width: 80px;
+	height: 80px;
+}
