@@ -2,5 +2,5 @@
 
 Entry files
 
-admin/adminStudio.html \n
+admin/adminStudio.html
 customr/homePage.html
