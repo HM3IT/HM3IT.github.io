@@ -1,0 +1,22 @@
+/* src/app.css or src/global.css */
+
+/* Include styles from style.css and mediaqueries.css here */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  /* Add more styles here */
+  
