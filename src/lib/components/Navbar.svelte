@@ -13,7 +13,7 @@
 </script>
 
 <nav id="desktop-nav">
-	<div class="logo">John Doe</div>
+	<div class="logo">HM3IT</div>
 	<div>
 		<ul class="nav-links">
 			<li><a href="#about">About</a></li>
@@ -24,7 +24,7 @@
 	</div>
 </nav>
 <nav id="hamburger-nav">
-	<div class="logo">John Doe</div>
+	<div class="logo">HM3IT</div>
 	<div class="hamburger-menu">
 		<div class="hamburger-icon">
 			<span>TEst 1</span>

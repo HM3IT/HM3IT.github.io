@@ -1,17 +1,50 @@
-<script>
+<script lang="ts">
+  import { onMount } from 'svelte';
   export let profile1Img;
   export let linkedinImg;
   export let gitImg;
+  export let Typewriter;
+
+  let welcomeText: HTMLHeadingElement;
+
+  onMount(() => {
+		// isDarkTheme = loadThemePreference();
+
+		const typewriter = new Typewriter(welcomeText, {
+			loop: true,
+			delay: 75
+		});
+
+		typewriter
+			.pauseFor(2500)
+			.typeString('Welcome!')
+			.pauseFor(2000)
+			.deleteAll()
+			.typeString('echo "Hello I\'m Hein Min Min Maw!"')
+			.pauseFor(1500)
+			.deleteAll()
+			.typeString('console.log("I ♥ programming!");')
+			.pauseFor(1500)
+			.deleteAll()
+			.typeString('logger.info("Contact me!");')
+			.pauseFor(1500)
+			.deleteAll()
+			.start();
+	});
 </script>
 
+ 
+
 <section id="profile">
-	<div class="section__pic-container">
+	<div class="section-pic-container">
 		<img src={profile1Img} alt="test" />
 	</div>
-	<div class="section__text">
-		<p class="section__text__p1">Hello, I'm</p>
-		<h1 class="title">Hein Min Min Maw</h1>
-		<p class="section__text__p2">Full-stack Developer</p>
+	<div class="section-text">
+	 
+		<h2 class="title transition duration-500 font-mono text-md sm:text-xl md:text-2xl lg:text-3xl  p-4 ont-extralight whitespace-nowrap" bind:this={welcomeText}>
+			&nbsp;
+		</h2>
+		<p class="section-text-p2">Full-stack Developer</p>
 		<div class="btn-container">
 			<button
 				class="btn btn-color-2"

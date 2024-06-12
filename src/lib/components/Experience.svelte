@@ -5,7 +5,7 @@ export let arrowImg;
 </script>
 
 <section id="experience">
-	<!-- <p class="section__text__p1">Explore</p> -->
+ 
 	<h1 class="title">Experience</h1>
 	<div class="experience-details-container">
 		<div class="about-containers">
