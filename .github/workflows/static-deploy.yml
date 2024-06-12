@@ -3,7 +3,6 @@ name: Build and Deploy to Pages
 on:
   push:
     branches: ["main"]
-
   workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
@@ -23,10 +22,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/configure-pages@v3
-        id: pages
       - uses: actions/setup-node@v3
         with:
+          node-version: '16'
           cache: 'npm'
       - run: npm ci
       - run: npm run build
