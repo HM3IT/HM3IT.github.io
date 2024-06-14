@@ -2,7 +2,11 @@
 module.exports = {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        customGray: 'rgb(53, 53, 53)',
+      }
+    },
   },
   plugins: [],
   darkMode: "class"

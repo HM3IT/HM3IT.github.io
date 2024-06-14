@@ -8,8 +8,6 @@
 	// @ts-ignore
 	import Typewriter from 'typewriter-effect/dist/core';
 
-
-
 	import Navbar from '$lib/components/Navbar.svelte';
 	// import HamburgerNav from '$lib/components/HamburgerNav.svelte';
 	import Experience from '$lib/components/Experience.svelte';

@@ -39,9 +39,9 @@
 	<div class="section-pic-container">
 		<img src={profile1Img} alt="test" />
 	</div>
-	<div class="section-text">
+	<div id="profile-text-div" class="section-text">
 	 
-		<h2 class="title transition duration-500 font-mono text-md sm:text-xl md:text-2xl lg:text-3xl  p-4 ont-extralight whitespace-nowrap" bind:this={welcomeText}>
+		<h2 id="type-writer" class="title transition duration-500 font-mono text-md sm:text-xl md:text-2xl lg:text-3xl  p-4 ont-extralight whitespace-nowrap" bind:this={welcomeText}>
 			&nbsp;
 		</h2>
 		<p class="section-text-p2">Full-stack Developer</p>

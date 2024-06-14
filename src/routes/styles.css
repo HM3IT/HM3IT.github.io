@@ -4,24 +4,22 @@
 @tailwind utilities;
 
 body {
-	font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-family: Arial, sans-serif;
+  background-color: rgb(245,245,245);
 }
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-  
-  .nav-links {
-    list-style-type: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: black;
-  }
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+}
 
 /* main {
 	height: 100vh;
@@ -29,125 +27,138 @@ body {
 } */
 
 @layer base {
-	.main-dark {
-		background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-		height: 100vh;
-		overflow: hidden;
-	}
+  .main-dark {
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    height: 100vh;
+    overflow: hidden;
+  }
 
-	.main-light {
-		background: radial-gradient(ellipse at top, #b6c2ff 0%, #75abe8 100%);
-		height: 100vh;
-		overflow: hidden;
-	}
+  .main-light {
+    background: radial-gradient(ellipse at top, #b6c2ff 0%, #75abe8 100%);
+    height: 100vh;
+    overflow: hidden;
+  }
 }
+
 .hvr-grow {
-	display: inline-block;
-	vertical-align: middle;
-	-webkit-transform: perspective(1px) translateZ(0);
-	transform: perspective(1px) translateZ(0);
-	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-	-webkit-transition-duration: 0.3s;
-	transition-duration: 0.3s;
-	-webkit-transition-property: transform;
-	transition-property: transform;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
 }
+
 .hvr-grow:hover,
 .hvr-grow:focus,
 .hvr-grow:active {
-	-webkit-transform: scale(1.25);
-	transform: scale(1.25);
+  -webkit-transform: scale(1.25);
+  transform: scale(1.25);
 }
 
 @layer utilities {
-	.hvr-grow-candle {
-		box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-		-webkit-transition-duration: 0.3s;
-		transition-duration: 0.3s;
-		-webkit-transition-property: transform;
-		transition-property: transform;
-	}
-	.hvr-grow-candle:hover,
-	.hvr-grow-candle:focus,
-	.hvr-grow-candle:active {
-		-webkit-transform: scale(0.55);
-		transform: scale(0.55);
-	}
+  .hvr-grow-candle {
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
 
-	.hvr-grow-candle-sm {
-		box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-		-webkit-transition-duration: 0.3s;
-		transition-duration: 0.3s;
-		-webkit-transition-property: transform;
-		transition-property: transform;
-	}
-	.hvr-grow-candle-sm:hover,
-	.hvr-grow-candle-sm:focus,
-	.hvr-grow-candle-sm:active {
-		-webkit-transform: scale(0.825);
-		transform: scale(0.825);
-	}
+  .hvr-grow-candle:hover,
+  .hvr-grow-candle:focus,
+  .hvr-grow-candle:active {
+    -webkit-transform: scale(0.55);
+    transform: scale(0.55);
+  }
 
-	.hvr-grow-candle-md {
-		box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-		-webkit-transition-duration: 0.3s;
-		transition-duration: 0.3s;
-		-webkit-transition-property: transform;
-		transition-property: transform;
-	}
-	.hvr-grow-candle-md:hover,
-	.hvr-grow-candle-md:focus,
-	.hvr-grow-candle-md:active {
-		-webkit-transform: scale(1.1);
-		transform: scale(1.1);
-	}
-} 
+  .hvr-grow-candle-sm {
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+
+  .hvr-grow-candle-sm:hover,
+  .hvr-grow-candle-sm:focus,
+  .hvr-grow-candle-sm:active {
+    -webkit-transform: scale(0.825);
+    transform: scale(0.825);
+  }
+
+  .hvr-grow-candle-md {
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+
+  .hvr-grow-candle-md:hover,
+  .hvr-grow-candle-md:focus,
+  .hvr-grow-candle-md:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
 
 .typewriter h1 {
-	overflow: hidden; /* Ensures the content is not revealed until the animation */
-	border-right: 0.15em solid orange; /* The typwriter cursor */
-	white-space: nowrap; /* Keeps the content on a single line */
-	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-	animation: typing 2s steps(14, end), blink-caret 0.75s step-end infinite;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  animation: typing 2s steps(14, end), blink-caret 0.75s step-end infinite;
 }
 
 /* The typing effect */
 @keyframes typing {
-	from {
-		width: 0;
-	}
-	to {
-		width: 100%;
-	}
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-	from,
-	to {
-		border-color: transparent;
-	}
-	50% {
-		border-color: orange;
-	}
+
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: orange;
+  }
 }
 
 .hvr-forward {
-	display: inline-block;
-	vertical-align: middle;
-	-webkit-transform: perspective(1px) translateZ(0);
-	transform: perspective(1px) translateZ(0);
-	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-	-webkit-transition-duration: 0.3s;
-	transition-duration: 0.3s;
-	-webkit-transition-property: transform;
-	transition-property: transform;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
 }
+
 .hvr-forward:hover,
 .hvr-forward:focus,
 .hvr-forward:active {
-	-webkit-transform: translateX(8px);
-	transform: translateX(8px);
+  -webkit-transform: translateX(8px);
+  transform: translateX(8px);
 }
 
 
@@ -332,7 +343,8 @@ section {
 .section-text {
   align-self: center;
   text-align: center;
-  width: 580px;;
+  width: 580px;
+  ;
 }
 
 .section-text p {
@@ -473,6 +485,10 @@ section {
 
 #experience {
   position: relative;
+}
+
+.section-ext-p1 {
+  text-align: center;
 }
 
 .experience-sub-title {
@@ -622,8 +638,13 @@ footer p {
   .section-container {
     display: block;
   }
-  #about-img-div{
-    display: inline-block;
+
+  #profile-text-div {
+    width: auto;
+  }
+
+  #about-img-div {
+    display: block;
   }
 
   .arrow {
@@ -648,9 +669,21 @@ footer p {
   .about-containers {
     margin-top: 0;
   }
+
   .about-details-container {
- 
+
     width: fit-content;
+
+  }
+
+  .details-container {
+    position: relative;
+  }
+
+  .details-container>img {
+    position: absolute;
+    top: 40%;
+    left: 40px;
   }
 }
 
@@ -666,13 +699,28 @@ footer p {
     margin-bottom: 0;
   }
 
-  #about-img-div{
+  #profile-text-div {
+    width: auto;
+  }
+
+  #about-img-div {
     display: none;
+  }
+
+  #type-writer {
+    font-size: 1.5rem;
+  }
+
+  #about-me {
+    font-size: .7rem;
   }
 
   article {
     font-size: 1rem;
+    width: 7rem;
   }
+
+
 
   footer nav {
     height: fit-content;
@@ -687,7 +735,7 @@ footer p {
 
 
   .contact-info-container {
-    margin: 0;
+    margin-left: 10px;
   }
 
   .contact-info-container p,
@@ -696,7 +744,22 @@ footer p {
   }
 
   .experience-sub-title {
-    font-size: 1.25rem;
+    font-size: 1rem;
+  }
+
+  .article-container {
+
+    justify-content: left;
+    padding-left: 20px;
+  }
+
+
+  .article-container h3 {
+    font-size: .75rem;
+  }
+
+  .article-container p {
+    font-size: .5rem;
   }
 
   .logo {
@@ -715,6 +778,10 @@ footer p {
     justify-content: center;
   }
 
+  .about-containers {
+    flex-direction: column;
+  }
+
   .section-text-p2 {
     font-size: 1.25rem;
   }
@@ -726,8 +793,24 @@ footer p {
   .text-container {
     text-align: justify;
   }
+
   .about-details-container {
- 
-   width: fit-content;
+
+    width: fit-content;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  #type-writer {
+    font-size: 1rem;
+  }
+
+  #about-me {
+    font-size: .7rem;
+  }
+
+  .contact-info-container {
+    margin-left: 10px;
   }
 }

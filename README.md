@@ -1,38 +1,6 @@
-# create-svelte
+# [HM3IT Portfolio Website](https://hm3it.github.io/)
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Hello I'm Hein Min Maw, a passionate Full-stack Developer currently pursuing my  ***BSc in Software Engineering*** at Edinburgh Napier University. My journey in software engineering has been enriched with experiences in various technologies and frameworks, Beyond my academic pursuits, I've work around with data analysis and BI analysis for e-commerce websites. My interest lies in exploring the potential of ***AI technology***, especially in enhancing e-commerce and hotel booking applications. Having worked in remote environments, I've learned the importance of meeting deadlines and fostering effective communication to drive project success. As a dedicated Full-stack Developer, I strive to deliver innovative solutions that surpass expectations,  **regardless of thework environment**.
 
-## Creating a project
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Feel free to explore my portfolio website https://hm3it.github.io/ to learn more about my projects and experiences. If you're interested in collaborating or discussing opportunities, please don't hesitate to reach out.

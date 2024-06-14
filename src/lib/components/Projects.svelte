@@ -6,7 +6,7 @@
 </script>
 
 <section id="projects">
-	<p class="section-ext__p1">Browse My Recent</p>
+	<p class="section-ext-p1">Browse My Recent</p>
 	<h1 class="title">Projects</h1>
 	<div class="experience-details-container">
 		<div class="about-containers">
