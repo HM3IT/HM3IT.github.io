@@ -1,10 +1,11 @@
 <script>
+import { fade } from 'svelte/transition';
 export let checkmarkImg;
 export let arrowImg;
 
 </script>
 
-<section id="experience">
+<section id="experience"  transition:fade={{ duration: 500, delay: 0 }}>
  
 	<h1 class="title">Experience</h1>
 	<div class="experience-details-container">
@@ -128,5 +129,5 @@ export let arrowImg;
 			</div>
 		</div>
 	</div>
-	<img src={arrowImg} alt="Arrow icon" class="icon arrow" />
+<a href="#projects">	<img src={arrowImg} alt="Arrow icon" class="icon arrow" /></a>
 </section>

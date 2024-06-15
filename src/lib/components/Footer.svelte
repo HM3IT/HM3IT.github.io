@@ -9,5 +9,5 @@
 			</ul>
 		</div>
 	</nav>
-	<p>Copyright &#169; 2024 HM3IT. All Rights Reserved.</p>
+	<p id="footer-copyright-text">Copyright &#169; 2024 HM3IT. All Rights Reserved.</p>
 </footer>

@@ -123,7 +123,7 @@
 </script>
 
 <div
-	class="shadow hvr-grow-candle sm:hvr-grow-candle-sm md:hvr-grow-candle-md z-10 mb-4 mt-24 sm:mt-36 md:mt-48 scale-50 sm:scale-75 md:scale-100"
+	class="shadow hvr-grow-candle sm:hvr-grow-candle-sm md:hvr-grow-candle-md z-999 mb-4 mt-24 sm:mt-36 md:mt-48 scale-50 sm:scale-75 md:scale-100"
 >
 	<button class="candles" on:click={() => onCandleClick()} aria-label="Change website theme">
 		<div class="candle1" bind:this={candle1}>

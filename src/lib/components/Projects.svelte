@@ -84,6 +84,6 @@
 			</div>
 		</div>
 	</div>
+<a href="#contact">	<img src={arrowImg} alt="Arrow icon" class="icon arrow" /></a>
 
-	<img src={arrowImg} alt="Arrow icon" class="icon arrow" />
 </section>
