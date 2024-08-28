@@ -79,7 +79,7 @@
 			<button
 				class="btn btn-color-2"
 				on:click={() => {
-					window.open('./assets/resume-example.pdf');
+					window.open('/HeinMinMinMaw-CV.pdf');
 				}}
 			>
 				Download CV
