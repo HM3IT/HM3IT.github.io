@@ -12,35 +12,39 @@
 		<div id="about-img-div" class="section-pic-container">
 			<img src={aboutImg} alt="test" class="main-profile-img" />
 		</div>
-		<div class="about-details-container">
+		<div class="about-details-container ">
 			<div class="about-containers">
 				<div class="details-container">
 					<img src={expImg} alt="Experience icon" class="icon" />
-					<h3>Experience</h3>
-					<p>1+ years <br />Full-stack Development</p>
+					<div>
+						<h3 class="font-semibold" >Experience</h3>
+						<p>Full-stack Developer (1+ years) </p>
+					</div>
 				</div>
 				<div class="details-container">
 					<img src={eduImg} alt="Education icon" class="icon" />
-					<h3>Education</h3>
-					<p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+					<div>
+						<h3 class="font-semibold" >Education</h3>
+						<p>B.Sc. Bachelor Degree</p>
+					</div>
 				</div>
 			</div>
 			<div class="text-container">
-				<p id="about-me">
-					Pursuing my BSc in Software Engineering from Edinburgh Napier University. My proficiency
+				<p id="about-me" class="text-justify leading-normal" style="text-indent: 5rem;">
+					Working in the field of IT and have hand on experience with AI proejcts. My proficiency
 					with frameworks includes Sveltekit, Litestar, and Chalice, with hands-on experience in OOP
 					design patterns, Typesense and utilization of AWS services such as boto3, s3, sns, and sqs
 					via both management console and CLI. I have also experience in data analysis and building
-					e-commerce website. Notable projects include automating data analysis for sales and profit
-					margin calculation During my work at Hexcode Technologies, I've improved my skills in
-					full-stack development, specializing in building responsive websites, and AI-powered
+					e-commerce website. I've improved my skills in full-stack development and AI-powered
 					applications. For example, an Medical app, which converts user audio into insightful
 					medical reports using the power of AI and a blog post app that use crawler and chat gpt to
 					create blog posts. I am particularly interested in leveraging AI technology and working on
 					E-commerce and hotel booking applications. With experience in remote work environments, I
 					excel in meeting deadlines and maintaining open communication channels to ensure project
-					success. As a junior full-stack developer, I am committed to delivering robust solutions
-					that exceed expectations, whether in-office or remotely.
+					success. As a full-stack developer, I am committed to delivering robust solutions
+					that exceed expectations, whether in-office or remotely. Currently, I am working at 
+					<a href="https://hexcode.tech/" class="text-indigo-600">Hexcode Technologies</a> 
+					as a Mid-level full-stack developer.
 				</p>
 			</div>
 		</div>
@@ -49,11 +53,4 @@
 		<img src={arrowImg} alt="Arrow icon" class="icon arrow" />
 	</a>
 </section>
-
-<style>
-	#about-me {
-		text-align: justify;
-		line-height: 1.5rem;
-		text-indent: 5rem;
-	}
-</style>
+ 

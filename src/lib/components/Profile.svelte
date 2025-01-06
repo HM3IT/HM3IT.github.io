@@ -2,36 +2,42 @@
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
 	export let profile1Img;
-	export let linkedinImg;
+ 
 	export let gitImg;
 	export let Typewriter;
+	export let contact ={
+		linkedinImgSrc: '',
+		emailImgSrc: '',
+		linkedinLink:'',
+		emailLink: '',
+		gitHubLink: ''
+	}
+	
 	let welcomeText: HTMLHeadingElement;
+	// Reactively determine when to show elements based on scroll position
+	let showWelcomeText = false;
+	let showButtons = false;
 
+	const handleScroll = () => {
+		const profileSection = document.getElementById('profile');
+		if (!profileSection) return;
 
-	  // Reactively determine when to show elements based on scroll position
-	  let showWelcomeText = false;
-  let showButtons = false;
+		const rect = profileSection.getBoundingClientRect();
+		const windowHeight = window.innerHeight || document.documentElement.clientHeight;
 
-  const handleScroll = () => {
-    const profileSection = document.getElementById('profile');
-    if (!profileSection) return;
+		// Adjust this value based on when you want the animation to trigger
+		const triggerOffset = windowHeight / 2; // Trigger animation when element is halfway into viewport
 
-    const rect = profileSection.getBoundingClientRect();
-    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+		if (!showWelcomeText && rect.top < triggerOffset) {
+		showWelcomeText = true;
+		}
 
-    // Adjust this value based on when you want the animation to trigger
-    const triggerOffset = windowHeight / 2; // Trigger animation when element is halfway into viewport
+		if (!showButtons && rect.top < triggerOffset / 2) {
+		showButtons = true;
+		}
+	};
 
-    if (!showWelcomeText && rect.top < triggerOffset) {
-      showWelcomeText = true;
-    }
-
-    if (!showButtons && rect.top < triggerOffset / 2) {
-      showButtons = true;
-    }
-  };
-
-  
+	
 
 	onMount(() => {
 		const typewriter = new Typewriter(welcomeText, {
@@ -94,8 +100,8 @@
 			</button>
 		</div>
 		<div id="socials-container">
-			<img src={linkedinImg} alt="My LinkedIn profile" class="icon" />
-			<img src={gitImg} alt="My Github profile" class="icon" />
+			<img on:click={()=>window.location.href= contact.linkedinLink} src={contact.linkedinImgSrc} alt="My LinkedIn profile" class="icon" />
+			<img on:click={()=>window.location.href= contact.gitHubLink} src={gitImg} alt="My Github profile" class="icon" />
 		</div>
 	</div>
 </section>

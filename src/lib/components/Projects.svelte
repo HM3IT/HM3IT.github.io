@@ -1,8 +1,21 @@
 <script>
- export let pjr1Img;
- export let pjr2Img;
- export let pjr3Img;
- export let arrowImg;
+	export let pjr1Img;
+	export let pjr2Img;
+	export let pjr3Img;
+	export let arrowImg;
+
+
+	const projects =  [
+		{
+			name: "Online Resume Builder",
+			demoLink: "",
+			repoLink: "",
+			img: pjr1Img,
+		}
+	]
+
+
+
 </script>
 
 <section id="projects">

@@ -1,8 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 
-	import Typewriter from 'svelte-typewriter';
-
+	// import Typewriter from 'svelte-typewriter';
 	import LoadingScreen from '$lib/components/LoadingScreen.svelte';
 	import Experience from '$lib/components/Experience.svelte';
 	import Projects from '$lib/components/Projects.svelte';
@@ -11,7 +10,6 @@
 	import Candles from '$lib/components/Candles.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
-	import Clouds from '$lib/components/Clouds.svelte';
 	import About from '$lib/components/About.svelte';
 	import Stars from '$lib/components/Stars.svelte';
 	// @ts-ignore
@@ -29,16 +27,17 @@
 	import emailImg from '$lib/assets/email.png';
 	import arrowImg from '$lib/assets/arrow.png';
 	import gitImg from '$lib/assets/github.png';
-	import Firework from '$lib/components/Firework.svelte';
+	// import Firework from '$lib/components/Firework.svelte';
 
+	$: isDarkThemeAnimation = isDarkTheme;
 	let contact = {
 		linkedinImgSrc: linkedinImg,
-		linkedinLink: 'https://www.linkedin.com/in/hein-min-min-maw/',
 		emailImgSrc: emailImg,
-		emailLink: 'heinmin2maw.it@gmail.com'
+		linkedinLink: 'https://www.linkedin.com/in/hein-min-min-maw/',
+		emailLink: 'heinmin2maw.it@gmail.com',
+		gitHubLink:"https://github.com/HM3IT"
 	};
 	let isDarkTheme = true;
-	$: isDarkThemeAnimation = isDarkTheme;
 	let isChangingTheme = false;
 	let showButtons = false;
 	let showTypewriter = false;
@@ -102,7 +101,7 @@
 	};
 </script>
 
-<LoadingScreen />
+<!-- <LoadingScreen /> -->
 <svelte:head>
 	<meta name="description" content="HM3IT's portfolio website" />
 </svelte:head>
@@ -110,7 +109,7 @@
 <Navbar />
 
 <!-- <Clouds /> -->
-<Profile {linkedinImg} {gitImg} {profile1Img} Typewriter={TypewriterFunc} />
+<Profile {contact} {gitImg} {profile1Img} Typewriter={TypewriterFunc} />
 
 <About {aboutImg} {expImg} {arrowImg} {eduImg} />
 
