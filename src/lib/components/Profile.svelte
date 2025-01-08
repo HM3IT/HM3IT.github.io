@@ -99,9 +99,13 @@
 				Contact Info
 			</button>
 		</div>
-		<div id="socials-container">
-			<img on:click={()=>window.location.href= contact.linkedinLink} src={contact.linkedinImgSrc} alt="My LinkedIn profile" class="icon" />
-			<img on:click={()=>window.location.href= contact.gitHubLink} src={gitImg} alt="My Github profile" class="icon" />
+		<div id="socials-container"> 
+			<a href="{contact.linkedinLink}">
+				<img src={contact.linkedinImgSrc} alt="My LinkedIn profile" class="icon" />
+			</a>
+			<a href="{contact.gitHubLink}">
+				<img src={gitImg} alt="My Github profile" class="icon" />
+			</a>
 		</div>
 	</div>
 </section>

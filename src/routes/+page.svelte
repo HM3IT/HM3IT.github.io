@@ -19,9 +19,6 @@
 	import checkmarkImg from '$lib/assets/checkmark.png';
 	import aboutImg from '$lib/assets/profile-img-2.png';
 	import linkedinImg from '$lib/assets/linkedin.png';
-	import pjr1Img from '$lib/assets/project-1.png';
-	import pjr2Img from '$lib/assets/project-2.png';
-	import pjr3Img from '$lib/assets/project-3.png';
 	import eduImg from '$lib/assets/education.png';
 	import expImg from '$lib/assets/experience.png';
 	import emailImg from '$lib/assets/email.png';
@@ -106,32 +103,23 @@
 	<meta name="description" content="HM3IT's portfolio website" />
 </svelte:head>
 
-<Navbar />
+	<Navbar />
 
-<!-- <Clouds /> -->
-<Profile {contact} {gitImg} {profile1Img} Typewriter={TypewriterFunc} />
+	<!-- <Clouds /> -->
+	<Profile {contact} {gitImg} {profile1Img} Typewriter={TypewriterFunc} />
 
-<About {aboutImg} {expImg} {arrowImg} {eduImg} />
+	<About {aboutImg} {expImg} {arrowImg} {eduImg} />
 
-<Experience {checkmarkImg} {arrowImg} />
+	<Experience {checkmarkImg} {arrowImg} />
 
-<Projects {pjr1Img} {pjr2Img} {pjr3Img} {arrowImg} />
+	<Projects {arrowImg} />
 
-<Contact {contact} />
+	<Contact {contact} />
 
-<!-- <Typewriter on:done={handleTypingEnd}>
-	<h1>{fireworkText}</h1>
-</Typewriter>
-{#if showButtons}
-	<div class="firework-buttons">
-		<button on:click={() => alert('Yes clicked!')}>Yes</button>
-		<button on:click={() => alert('No clicked!')}>No</button>
-	</div>
-{/if} -->
+	<Candles isDarkTheme={isDarkThemeAnimation} on:candleClick={onCandleClick} />
 
-<Candles isDarkTheme={isDarkThemeAnimation} on:candleClick={onCandleClick} />
-<Footer />
-{#if isDarkTheme}
-	<Stars />
-	<!-- <Firework /> -->
-{/if}
+	<Footer />
+	{#if isDarkTheme}
+		<Stars />
+		<!-- <Firework /> -->
+	{/if}

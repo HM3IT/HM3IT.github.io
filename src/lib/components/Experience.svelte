@@ -1,11 +1,12 @@
 <script>
 import { fade } from 'svelte/transition';
-export let checkmarkImg;
+
 import webImg from '$lib/assets/web3.png';
 import skeletonUIImg from '$lib/assets/skeletonUI.jpg';
 import typescriptImg from '$lib/assets/typescript.png';
 import sveltekitImg from '$lib/assets/sveltekit.png';
 import reactImg from '$lib/assets/react.png';
+import phpImg from '$lib/assets/php.png';
 import tailwindImg from '$lib/assets/tailwind.png';
 import bootstrapImg from '$lib/assets/bootstrap.png';
 import gitImg from '$lib/assets/git.png';
@@ -17,7 +18,9 @@ import dockerImg from '$lib/assets/docker.png';
 import awsImg from '$lib/assets/aws.png';
 import sqlAlchemyImg from '$lib/assets/sqlAlchemy.png';
 import typesenseImg from '$lib/assets/typesense.png';
+
 export let arrowImg;
+export let checkmarkImg;
 
 const proficiency ={
 	intermediate: "Intermediate",
@@ -30,7 +33,7 @@ const languages = [
 			iconSrc: webImg, 
 			skill: "HTML CSS JS",
 			ref:'#',
-			proficiencyLevel: proficiency.proficient
+			proficiencyLevel: proficiency.proficient,
 		},
 		{
 			iconSrc: pythonImg,
@@ -45,8 +48,8 @@ const languages = [
 			proficiencyLevel: proficiency.proficient
 		},
 		{
-			iconSrc: reactImg,
-			skill: "React",
+			iconSrc: phpImg,
+			skill: "PHP",
 			ref:'https://react.dev/',
 			proficiencyLevel: proficiency.intermediate
 		},
@@ -62,17 +65,18 @@ const languages = [
 			ref:'https://www.typescriptlang.org/',
 			proficiencyLevel: proficiency.intermediate
 		},
-		{
-			iconSrc: gitImg,
-			skill: "Version Control",
-			ref:'https://svelte.dev/',
-			proficiencyLevel: proficiency.proficient
-		},
+
 		{
 			iconSrc: dockerImg,
 			skill: "Docker",
 			ref:'https://www.docker.com/',
 			proficiencyLevel: proficiency.intermediate
+		},
+		{
+			iconSrc: gitImg,
+			skill: "Version Control",
+			ref:'https://svelte.dev/',
+			proficiencyLevel: proficiency.proficient
 		},
 		{
 			iconSrc: checkmarkImg,
@@ -136,7 +140,7 @@ const frameworks = [
 			iconSrc: sqlAlchemyImg,
 			skill: "Sqlalchemy + Advanced",
 			ref:'https://svelte.dev/',
-			proficiencyLevel: proficiency.proficient
+			proficiencyLevel: proficiency.intermediate
 		},
 	
 ]
