@@ -73,17 +73,17 @@ const languages = [
 			proficiencyLevel: proficiency.intermediate
 		},
 		{
+			iconSrc: checkmarkImg,
+			skill: "Alembic",
+			ref:'https://alembic.sqlalchemy.org/en/latest/',
+			proficiencyLevel: proficiency.intermediate
+		},
+		{
 			iconSrc: gitImg,
 			skill: "Version Control",
 			ref:'https://svelte.dev/',
 			proficiencyLevel: proficiency.proficient
 		},
-		{
-			iconSrc: checkmarkImg,
-			skill: "Alembic",
-			ref:'https://alembic.sqlalchemy.org/en/latest/',
-			proficiencyLevel: proficiency.intermediate
-		}
 	];
 
 
@@ -154,14 +154,14 @@ const frameworks = [
 		<div class="about-containers">
 			<div class="details-container">
 				<h2 class="experience-sub-title">Languages & Tools</h2>
-				<div style="margin:0 auto; width: 600px;">
+				<div style="margin:0 auto;" class="experience-card">
 				
 					<div class="article-container">
 						{#each languages as experience}
 							<article>
 								<img src={experience.iconSrc} alt="Experience icon" class="icon border rounded-full border-black" />
 								<div>
-									<a href="{experience.ref}" class="text-blue-900 no-underline">{experience.skill}</a>
+									<a href="{experience.ref}" class="text-blue-900 no-underline skill-name">{experience.skill}</a>
 									<p>{experience.proficiencyLevel}</p>
 								</div>
 							</article>
@@ -174,14 +174,14 @@ const frameworks = [
 		 
 			<div class="details-container">
 				<h2 class="experience-sub-title">Library, Framework & SDK</h2>
-				 <div style="margin:0 auto; width: 600px;">
+				 <div style="margin:0 auto;" class="experience-card">
 					<div class="article-container">
 			
 				    {#each frameworks as framework}
 					<article>
 						<img src={framework.iconSrc} alt="Experience icon" class="icon border rounded-full border-black" />
 						<div>
-							<a href="{framework.ref}" class="text-blue-900 no-underline">{framework.skill}</a>
+							<a href="{framework.ref}" class="text-blue-900 no-underline skill-name">{framework.skill}</a>
 							<p>{framework.proficiencyLevel}</p>
 						</div>
 					</article>
