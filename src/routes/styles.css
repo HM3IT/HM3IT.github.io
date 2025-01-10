@@ -530,17 +530,14 @@ section {
 .about-details-container {
   justify-content: center;
   flex-direction: column;
-  width: 1000px;
+  width: unset;
 }
 
 .about-containers,
 .about-details-container {
   display: flex;
 }
-.about-containers{
-  align-items: center;
-  justify-content: center;
-}
+
 .arrow {
   position: absolute;
   right: -5rem;
@@ -778,6 +775,14 @@ footer p {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .about-details-container {
+    justify-content: center;
+    flex-direction: column;
+    width: 1000px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   #desktop-nav {
     display: none;
@@ -833,14 +838,10 @@ footer p {
     margin-top: 0;
   }
 
-  .about-details-container {
-
-    width: fit-content;
-
-  }
 
   .details-container {
     position: relative;
+    width: 360px;
   }
 
   .details-container>img {
@@ -882,6 +883,10 @@ footer p {
 
   #about-me {
     font-size: .7rem;
+  }
+
+  #star-view{
+    display: none;
   }
 
   article {
@@ -962,14 +967,25 @@ footer p {
   }
 
   .about-details-container {
-
     width: fit-content;
   }
   footer {
     height: 10vh;
   }
-  #star-view{
-    display: none;
+
+
+
+  .about-details-container .details-container {
+    position: relative;
+    width: 340px;
+    padding: 10px;
+  }
+
+  .details-container .experience-card{
+    width: unset;
+  }
+  .details-container .experience-card article{
+    width: 100px;
   }
 }
 
@@ -1026,38 +1042,57 @@ footer p {
   .skill-name{
     font-size: .65rem;
   }
+
+  .about-details-container .details-container {
+    position: relative;
+    width: 340px;
+    padding: 10px;
+  }
 }
 
 
 @media screen and (max-width: 380px) {
+  #footer-copyright-text{
+    font-size: .75rem;
+  }
+
+
+  #type-writer {
+    font-size: .8rem;
+  }
+
+  #star-view{
+    display: none;
+  }
+  footer {
+    height: 5vh;
+  }
   .details-container>img {
     position: absolute;
     top: 40%;
     left: 20px;
   }
-
-  .article-container {
-    padding: 0;
-  }
-
-  #type-writer {
-    font-size: .8rem;
-  }
-  footer {
-    height: 5vh;
-  }
-  #star-view{
-    display: none;
-  }
-
-
-  .experience-card{
-    width: 360px;
-  }
   .experience-card article{
     width: 150px;
   }
+  .article-container {
+    padding: 0;
+  }
+  .experience-card{
+    width: 360px;
+  }
+
   .skill-name{
     font-size: .65rem;
+  }
+  .details-container {
+    position: relative;
+    width: 300px;
+  }
+  .article-container{
+    gap: 25px;
+  }
+  .about-details-container .details-container{
+    width: 300px;
   }
 }
