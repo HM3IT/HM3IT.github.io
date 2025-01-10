@@ -98,7 +98,7 @@
 	};
 </script>
 
-<!-- <LoadingScreen /> -->
+<LoadingScreen />
 <svelte:head>
 	<meta name="description" content="HM3IT's portfolio website" />
 </svelte:head>

@@ -484,6 +484,9 @@ section {
   border-radius: 2rem;
 }
 
+.btn-color-1{
+  color: white ;
+}
 .btn-color-1,
 .btn-color-2 {
   border: rgb(53, 53, 53) 0.1rem solid;
@@ -562,7 +565,7 @@ section {
   flex: 1;
   border-radius: 2rem;
   text-align: center;
-  z-index: 999;
+  z-index: 9;
 }
 
 .section-container {

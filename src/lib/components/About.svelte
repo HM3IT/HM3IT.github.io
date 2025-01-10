@@ -31,20 +31,13 @@
 			</div>
 			<div class="text-container">
 				<p id="about-me" class="text-justify leading-normal" style="text-indent: 5rem;">
-					Working in the field of IT and have hand on experience with AI proejcts. My proficiency
-					with frameworks includes Sveltekit, Litestar, and Chalice, with hands-on experience in OOP
-					design patterns, Typesense and utilization of AWS services such as boto3, s3, sns, and sqs
-					via both management console and CLI. I have also experience in data analysis and building
-					e-commerce website. I've improved my skills in full-stack development and AI-powered
-					applications. For example, an Medical app, which converts user audio into insightful
-					medical reports using the power of AI and a blog post app that use crawler and chat gpt to
-					create blog posts. I am particularly interested in leveraging AI technology and working on
-					E-commerce and hotel booking applications. With experience in remote work environments, I
-					excel in meeting deadlines and maintaining open communication channels to ensure project
-					success. As a full-stack developer, I am committed to delivering robust solutions
-					that exceed expectations, whether in-office or remotely. Currently, I am working at 
-					<a href="https://hexcode.tech/" class="text-indigo-600">Hexcode Technologies</a> 
-					as a Mid-level full-stack developer.
+					I’m a software engineer, having graduated from Info Myanmar University in November 2024. 
+					I have experience in AI projects and full-stack development, working with frameworks like SvelteKit, Litestar, and Chalice. 
+					I’ve also worked with AWS services (boto3, S3, SNS, SQS) and Typesense. 
+					I’ve built e-commerce websites and developed AI-driven applications, such as a medical app that converts user audio into SOAP reports and 
+					a blog post app using crawlers and LLM. I’m interested in applying AI in e-commerce and hotel booking projects. 
+					I enjoy working remotely, meeting deadlines, and keeping communication clear. 
+					Currently, I’m working as a Mid-level Full-Stack Developer at <a href="https://hexcode.tech/" class="text-indigo-600">Hexcode Technologies</a>
 				</p>
 			</div>
 		</div>
