@@ -15,9 +15,9 @@
 	// @ts-ignore
 	import TypewriterFunc from 'typewriter-effect/dist/core';
 
-	import profile1Img from '$lib/assets/profile-pic1.jpeg';
+	import profile1Img from '$lib/assets/profile-pic1.png';
 	import checkmarkImg from '$lib/assets/checkmark.png';
-	import aboutImg from '$lib/assets/profile-img-2.png';
+	import aboutImg from '$lib/assets/programming-languages.jpg';
 	import linkedinImg from '$lib/assets/linkedin.png';
 	import eduImg from '$lib/assets/education.png';
 	import expImg from '$lib/assets/experience.png';
