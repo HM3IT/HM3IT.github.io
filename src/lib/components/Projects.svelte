@@ -43,11 +43,11 @@
 		},		
 		{
 			title: "Text Network Analysis",
-			demoLink: "",
+			demoLink: "projects/graph",
 			repoLink: "",
 			img: textNetworkImg,
 			description:"",
-			isPrivateApp: true,
+			isPrivateApp: false,
 			devYear:2024
 		},
 		{
