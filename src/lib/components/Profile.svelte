@@ -1,20 +1,20 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
-	export let profile1Img;
- 
-	export let gitImg;
+	import DeviconLinkedin from '~icons/devicon/linkedin';
+	import SkillIconsGithubDark from '~icons/skill-icons/github-dark';
+	export let profileImg;
+
 	export let Typewriter;
-	export let contact ={
+	export let contact = {
 		linkedinImgSrc: '',
 		emailImgSrc: '',
-		linkedinLink:'',
+		linkedinLink: '',
 		emailLink: '',
 		gitHubLink: ''
-	}
-	
+	};
+
 	let welcomeText: HTMLHeadingElement;
-	// Reactively determine when to show elements based on scroll position
 	let showWelcomeText = false;
 	let showButtons = false;
 
@@ -25,19 +25,16 @@
 		const rect = profileSection.getBoundingClientRect();
 		const windowHeight = window.innerHeight || document.documentElement.clientHeight;
 
-		// Adjust this value based on when you want the animation to trigger
-		const triggerOffset = windowHeight / 2; // Trigger animation when element is halfway into viewport
+		const triggerOffset = windowHeight / 2; 
 
 		if (!showWelcomeText && rect.top < triggerOffset) {
-		showWelcomeText = true;
+			showWelcomeText = true;
 		}
 
 		if (!showButtons && rect.top < triggerOffset / 2) {
-		showButtons = true;
+			showButtons = true;
 		}
 	};
-
-	
 
 	onMount(() => {
 		const typewriter = new Typewriter(welcomeText, {
@@ -61,16 +58,16 @@
 			.deleteAll()
 			.start();
 
-			window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+		window.addEventListener('scroll', handleScroll);
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
 	});
 </script>
 
 <section id="profile">
 	<div class="section-pic-container">
-		<img class="main-profile-img" src={profile1Img} alt="test" />
+		<img class="main-profile-img" src={profileImg} alt="test" />
 	</div>
 	<div id="profile-text-div" class="section-text">
 		<h2
@@ -99,15 +96,13 @@
 				Contact Info
 			</button>
 		</div>
-		<div id="socials-container"> 
-			<a href="{contact.linkedinLink}">
-				<img src={contact.linkedinImgSrc} alt="My LinkedIn profile" class="icon" />
+		<div id="socials-container">
+			<a href={contact.linkedinLink}>
+				<DeviconLinkedin height={45} width={45} />
 			</a>
-			<a href="{contact.gitHubLink}">
-				<img src={gitImg} alt="My Github profile" class="icon" />
+			<a href={contact.gitHubLink}>
+				<SkillIconsGithubDark height={45} width={45} />
 			</a>
 		</div>
 	</div>
 </section>
-
- 

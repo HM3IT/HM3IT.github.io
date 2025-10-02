@@ -253,21 +253,22 @@ body {
 
 
 /* GENERAL */
-
-
 * {
   margin: 0;
   padding: 0;
 }
 
+img{
+    -webkit-user-select: none; /* Safari/iOS */
+    -ms-user-select: none;     /* old Edge/IE */
+    user-select: none;         /* standard */
+    -webkit-touch-callout: none; 
+}
+
 html {
   scroll-behavior: smooth;
 }
-
-p {
-  color: rgb(85, 85, 85);
-}
-
+ 
 /* TRANSITION */
 
 a,

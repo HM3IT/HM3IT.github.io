@@ -15,7 +15,7 @@
 	// @ts-ignore
 	import TypewriterFunc from 'typewriter-effect/dist/core';
 
-	import profile1Img from '$lib/assets/profile-pic1.png';
+	import profile1Img from '$lib/assets/profile.png';
 	import checkmarkImg from '$lib/assets/checkmark.png';
 	import aboutImg from '$lib/assets/programming-languages.jpg';
 	import linkedinImg from '$lib/assets/linkedin.png';
@@ -23,9 +23,7 @@
 	import expImg from '$lib/assets/experience.png';
 	import emailImg from '$lib/assets/email.png';
 	import arrowImg from '$lib/assets/arrow.png';
-	import gitImg from '$lib/assets/github.png';
-	// import Firework from '$lib/components/Firework.svelte';
-
+ 
 	$: isDarkThemeAnimation = isDarkTheme;
 	let contact = {
 		linkedinImgSrc: linkedinImg,
@@ -38,7 +36,6 @@
 	let isChangingTheme = false;
 	let showButtons = false;
 	let showTypewriter = false;
-	const fireworkText = 'Wanna see firework?';
 	onMount(() => {
 		isDarkTheme = loadThemePreference();
 		document.documentElement.classList.toggle('dark-theme', isDarkTheme);
@@ -106,7 +103,7 @@
 	<Navbar />
 
 	<!-- <Clouds /> -->
-	<Profile {contact} {gitImg} {profile1Img} Typewriter={TypewriterFunc} />
+	<Profile {contact} profileImg={profile1Img} Typewriter={TypewriterFunc} />
 
 	<About {aboutImg} {expImg} {arrowImg} {eduImg} />
 

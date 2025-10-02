@@ -1,16 +1,3 @@
-<script>
-	// document.addEventListener("DOMContentLoaded", () => {
-	//   const audio = document.getElementById("myAudio");
-	//   if (audio){
-	// 	  audio.play().catch(error => {
-	// 		console.error("Error playing audio:", error);
-	// 	  });
-
-	//   }
-	// });
-  </script>
-
-
 <div  id="star-view" class="hidden dark:block relative">
 	<div class="night view-point1">
 		{#each { length: 50 } as _}
