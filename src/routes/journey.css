@@ -966,17 +966,172 @@ main {
 	margin-top: 5rem;
 }
 
-.story-video--solo video {
-	aspect-ratio: 16 / 9;
+.universal-solo-pair {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 1.2rem;
+	align-items: start;
+	margin: 4rem 0 5rem;
+}
+
+.universal-solo-pair .story-video,
+.universal-solo-pair .story-photo {
+	margin: 0;
+}
+
+.story-video--solo video,
+.universal-solo-photo img {
+	aspect-ratio: 4 / 5;
+	object-fit: cover;
 }
 
 .universal-solo-photo {
-	width: min(68%, 34rem);
-	margin: 1rem 0 5rem auto;
+	width: 100%;
+	margin: 0;
 }
 
-.universal-solo-photo img {
+
+
+/* Chapter 02 · The Beginning */
+.beginning-campus,
+.beginning-football,
+.beginning-java,
+.programming-turn {
+	max-width: 1050px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.beginning-campus,
+.beginning-football,
+.beginning-java {
+	padding: 8rem 0;
+}
+
+.beginning-campus__copy,
+.beginning-section-heading,
+.beginning-java__copy {
+	max-width: 690px;
+}
+
+.beginning-campus__copy h4,
+.beginning-section-heading h4,
+.beginning-java__copy h4 {
+	font-family: var(--display);
+	font-weight: 400;
+	font-size: clamp(3rem, 5vw, 5.4rem);
+	line-height: 0.94;
+	letter-spacing: -0.045em;
+	margin: 1rem 0 1.7rem;
+}
+
+.beginning-campus__copy > p:not(.story-label),
+.football-flashback__copy > p:not(.story-label) {
+	font-size: 1.02rem;
+	line-height: 1.75;
+	color: #aab7c8;
+}
+
+.beginning-campus__photos {
+	display: grid;
+	grid-template-columns: repeat(12, minmax(0, 1fr));
+	gap: 1.2rem;
+	margin-top: 5rem;
+}
+
+.beginning-campus__photos .story-photo:first-child {
+	grid-column: 1 / 10;
+}
+
+.beginning-campus__photos .story-photo:last-child {
+	grid-column: 4 / 13;
+}
+
+.beginning-landscape img,
+.java-artifact img {
+	aspect-ratio: 16 / 9;
+	object-fit: cover;
+}
+
+.beginning-landscape--offset {
+	margin-top: 3.5rem;
+}
+
+.beginning-football {
+	border-top: 1px solid rgba(145, 215, 255, 0.08);
+}
+
+.football-pair {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 1.2rem;
+	margin-top: 5rem;
+}
+
+.football-flashback {
+	display: grid;
+	grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr);
+	gap: clamp(2rem, 6vw, 6rem);
+	align-items: center;
+	margin-top: 8rem;
+}
+
+.beginning-java {
+	display: grid;
+	grid-template-columns: minmax(0, 0.8fr) minmax(320px, 1.2fr);
+	gap: clamp(3rem, 8vw, 8rem);
+	align-items: center;
+	border-top: 1px solid rgba(145, 215, 255, 0.08);
+}
+
+.java-artifact {
+	position: relative;
+}
+
+.java-artifact::before {
+	content: "JAVA · 2019";
+	position: absolute;
+	top: -1.5rem;
+	right: 0;
+	font-size: 0.62rem;
+	letter-spacing: 0.16em;
+	color: var(--sky-blue);
+}
+
+.programming-turn {
+	display: grid;
+	grid-template-columns: minmax(260px, 0.72fr) minmax(0, 1fr);
+	gap: clamp(3rem, 8vw, 8rem);
+	align-items: center;
+	padding: 10rem 0 12rem;
+}
+
+.programming-turn__visual {
+	max-width: 30rem;
+}
+
+.programming-begin-photo img {
 	aspect-ratio: 4 / 5;
+	object-fit: cover;
+	box-shadow:
+		0 26px 80px rgba(0, 0, 0, 0.42),
+		0 0 70px rgba(80, 177, 255, 0.09);
+}
+
+.programming-turn__quote {
+	font-family: var(--display);
+	font-size: clamp(2.6rem, 5vw, 5rem);
+	line-height: 0.98;
+	letter-spacing: -0.04em;
+	color: #f4fbff;
+	margin: 1.3rem 0 2rem;
+}
+
+.programming-turn__copy > p:last-child {
+	max-width: 31rem;
+	font-size: 1.05rem;
+	line-height: 1.75;
+	color: #9fabb9;
 }
 
 
@@ -990,7 +1145,7 @@ main {
 
 .route {
 	display: grid;
-	grid-template-columns: auto 1fr auto 1fr auto 1fr auto;
+	grid-template-columns: auto 1fr auto 1fr auto 1fr auto 1fr auto;
 	align-items: center;
 	gap: 0.8rem;
 	margin: 5rem 0 8rem;
@@ -1283,6 +1438,38 @@ main {
 	.universal-solo-photo {
 		width: 100%;
 		margin-left: 0;
+	}
+
+	.beginning-campus__photos {
+		grid-template-columns: 1fr;
+	}
+
+	.beginning-campus__photos .story-photo:first-child,
+	.beginning-campus__photos .story-photo:last-child {
+		grid-column: 1;
+	}
+
+	.beginning-landscape--offset {
+		margin-top: 0;
+	}
+
+	.football-pair,
+	.football-flashback,
+	.beginning-java,
+	.programming-turn {
+		grid-template-columns: 1fr;
+	}
+
+	.football-flashback {
+		margin-top: 6rem;
+	}
+
+	.programming-turn__visual {
+		max-width: 26rem;
+	}
+
+	.programming-turn {
+		padding-top: 7rem;
 	}
 
 	.story-beat--closing {
