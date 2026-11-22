@@ -28,7 +28,7 @@
 				<figcaption>First year at TUM.</figcaption>
 			</figure>
 
-			<figure class="story-photo beginning-landscape beginning-landscape--offset">
+			<figure class="story-photo beginning-movie beginning-landscape--offset">
 				<img src={`${base}/tum-first-year-movie.jpg`} alt="The first-year IT class going to the cinema together" loading="lazy" />
 				<figcaption>Our first-year IT class went to see a movie together.</figcaption>
 			</figure>
@@ -79,7 +79,7 @@
 		</div>
 
 		<figure class="story-photo java-artifact">
-			<img src={`${base}/java-project-01.jpg`} alt="A laptop showing an early Java Hello World program" loading="lazy" />
+			<img src={`${base}/java-helloworld.jpg`} alt="A laptop showing an early Java Hello World program" loading="lazy" />
 			<figcaption>One of my earliest Java memories: Hello World.</figcaption>
 		</figure>
 	</section>
