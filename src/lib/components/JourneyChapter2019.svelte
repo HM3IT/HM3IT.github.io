@@ -100,8 +100,8 @@
 			</p>
 		</div>
 
-		<div class="route" aria-label="Trip route: Mandalay, Singapore, Bali, Cambodia">
-			<span>Mandalay</span><i></i><span>Singapore</span><i></i><span>Bali</span><i></i><span>Cambodia</span>
+		<div class="route" aria-label="Trip route: Mandalay, Bali, Singapore, Cambodia, Bangkok">
+			<span>Mandalay</span><i></i><span>Bali</span><i></i><span>Singapore</span><i></i><span>Cambodia</span><i></i><span>Bangkok</span>
 		</div>
 
 		<div class="photo-editorial">
@@ -110,7 +110,7 @@
 				<figcaption>Singapore. First trip outside Myanmar.</figcaption>
 			</figure>
 
-			<figure class="story-photo photo-slot--small photo-slot--offset">
+			<figure class="story-photo photo-slot--zani">
 				<img src={`${base}/zani-hostel-group.jpg`} alt="Zani Hostel group photo during the trip" loading="lazy" />
 				<figcaption>Zani Hostel group.</figcaption>
 			</figure>
@@ -143,19 +143,19 @@
 			<p>
 				Then there was another ride — higher, and cyan if I remember correctly. My friends went. I didn’t.
 			</p>
-			<p>I ended up walking around by myself for most of the day.</p>
 		</div>
 
-		<div class="universal-gallery" aria-label="My solo time around Universal Studios">
-			<figure class="story-photo">
-				<img src={`${base}/universal-studios-solo-01.jpg`} alt="A solo photo from walking around Universal Studios after separating from my friends" loading="lazy" />
-				<figcaption>After separating from the group, I spent most of the day wandering around alone.</figcaption>
-			</figure>
-			<figure class="story-photo story-photo--lower">
-				<img src={`${base}/universal-studios-solo-02.jpg`} alt="Another solo photo from Universal Studios during the same day" loading="lazy" />
-				<figcaption>At the time, I was fine with it.</figcaption>
-			</figure>
-		</div>
+		<figure class="story-video story-video--solo">
+			<video autoplay muted loop playsinline preload="metadata" aria-label="A short looping clip from walking around Universal Studios alone">
+				<source src={`${base}/universal-studios-solo-loop.mp4`} type="video/mp4" />
+			</video>
+			<figcaption>After separating from the group, I spent most of the day wandering around alone.</figcaption>
+		</figure>
+
+		<figure class="story-photo universal-solo-photo">
+			<img src={`${base}/universal-studios-solo.jpg`} alt="A solo photo from Universal Studios after separating from my friends" loading="lazy" />
+			<figcaption>At the time, I was fine with it.</figcaption>
+		</figure>
 
 		<div class="story-copy">
 			<p class="pull-quote">Looking back? I wish I had gone with them.</p>
