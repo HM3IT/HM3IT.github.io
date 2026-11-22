@@ -34,7 +34,8 @@ export const journey: JourneyNode[] = [
 		title: 'Everything Stopped',
 		summary: 'COVID interrupted university, changed home life, and gave me a very different kind of education.',
 		side: 'left',
-		tone: 'difficult'
+		tone: 'difficult',
+		expandable: true
 	},
 	{
 		id: 'starting-again',
