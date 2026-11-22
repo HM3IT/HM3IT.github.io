@@ -26,6 +26,13 @@
 		</div>
 	</nav>
 
+	<div class="hero-stars" aria-hidden="true">
+		<span class="soft-star soft-star--one"></span>
+		<span class="soft-star soft-star--two"></span>
+		<span class="soft-star soft-star--three"></span>
+		<span class="soft-star soft-star--four"></span>
+	</div>
+
 	<div class="hero-thread" aria-hidden="true" style={`transform: ${threadTransform}`}>
 		<svg viewBox="0 0 1000 820" preserveAspectRatio="none">
 			<defs>
