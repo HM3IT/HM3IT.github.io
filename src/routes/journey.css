@@ -1053,6 +1053,13 @@ main {
 	object-fit: cover;
 }
 
+.beginning-movie img {
+	width: 100%;
+	height: auto;
+	min-height: 0;
+	object-fit: contain;
+}
+
 .beginning-landscape--offset {
 	margin-top: 3.5rem;
 }
@@ -1134,6 +1141,187 @@ main {
 	color: #9fabb9;
 }
 
+
+/* Chapter 03 · Everything Stopped */
+.stopped-before,
+.exam-night,
+.stopped-home,
+.stopped-programming,
+.nasa-beat,
+.stopped-closing {
+	max-width: 1050px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.stopped-before,
+.exam-night,
+.stopped-home,
+.stopped-programming {
+	padding: 8rem 0;
+}
+
+.stopped-heading,
+.exam-night__copy,
+.stopped-programming__heading {
+	max-width: 720px;
+}
+
+.stopped-heading h4,
+.exam-night__copy h4,
+.stopped-home__copy h4,
+.stopped-programming__heading h4 {
+	font-family: var(--display);
+	font-weight: 400;
+	font-size: clamp(3rem, 5vw, 5.4rem);
+	line-height: 0.94;
+	letter-spacing: -0.045em;
+	margin: 1rem 0 1.7rem;
+}
+
+.stopped-heading > p:not(.story-label),
+.stopped-home__copy > p:not(.story-label) {
+	font-size: 1.02rem;
+	line-height: 1.75;
+	color: #aab7c8;
+}
+
+.hiking-pair {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 1.2rem;
+	margin-top: 5rem;
+}
+
+.hiking-pair img {
+	aspect-ratio: 16 / 10;
+	object-fit: cover;
+}
+
+.exam-night {
+	border-top: 1px solid rgba(145, 215, 255, 0.08);
+}
+
+.exam-night__photo {
+	width: min(78%, 48rem);
+	margin: 4rem 0 8rem auto;
+}
+
+.exam-night__photo img {
+	aspect-ratio: 16 / 10;
+	object-fit: cover;
+}
+
+.exam-reveal {
+	display: grid;
+	grid-template-columns: minmax(0, 1.15fr) minmax(240px, 0.55fr);
+	gap: clamp(3rem, 7vw, 7rem);
+	align-items: center;
+}
+
+.exam-reveal__line {
+	font-family: var(--display);
+	font-size: clamp(2.2rem, 4vw, 3.8rem);
+	line-height: 1.02;
+	letter-spacing: -0.035em;
+	color: #f2faff;
+}
+
+.meme-card img,
+.programming-meme img {
+	width: 100%;
+	height: auto;
+	min-height: 0;
+	object-fit: contain;
+}
+
+.stopped-home {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(260px, 0.62fr);
+	gap: clamp(3rem, 8vw, 8rem);
+	align-items: center;
+	border-top: 1px solid rgba(145, 215, 255, 0.08);
+}
+
+.stopped-home__copy {
+	max-width: 630px;
+}
+
+.stopped-portrait-video {
+	width: min(100%, 25rem);
+	margin: 0 auto;
+}
+
+.stopped-portrait-video video {
+	aspect-ratio: 4 / 5;
+	object-fit: cover;
+}
+
+.stopped-programming {
+	border-top: 1px solid rgba(145, 215, 255, 0.08);
+}
+
+.programming-2020-grid {
+	display: grid;
+	grid-template-columns: minmax(0, 1.2fr) minmax(240px, 0.65fr);
+	gap: clamp(2rem, 5vw, 5rem);
+	align-items: center;
+	margin-top: 5rem;
+}
+
+.programming-2020-selfie img {
+	aspect-ratio: 16 / 10;
+	object-fit: cover;
+}
+
+.nasa-beat {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(260px, 0.62fr);
+	gap: clamp(3rem, 8vw, 8rem);
+	align-items: center;
+	padding: 10rem 0;
+}
+
+.nasa-beat__copy {
+	max-width: 620px;
+}
+
+.nasa-quote {
+	font-family: var(--display);
+	font-size: clamp(2.6rem, 5vw, 5rem);
+	line-height: 0.98;
+	letter-spacing: -0.04em;
+	color: #f4fbff;
+	margin: 1.3rem 0 2rem;
+}
+
+.nasa-beat__copy > p:last-child {
+	font-size: 1.05rem;
+	line-height: 1.75;
+	color: #9fabb9;
+}
+
+.stopped-closing {
+	padding: 10rem 0 12rem;
+	text-align: center;
+}
+
+.stopped-closing__line {
+	font-family: var(--display);
+	font-size: clamp(3.6rem, 7vw, 7rem);
+	line-height: 0.9;
+	letter-spacing: -0.05em;
+	color: #f4fbff;
+	margin: 1.5rem auto 2.5rem;
+}
+
+.stopped-closing > p:last-child {
+	max-width: 42rem;
+	margin: 0 auto;
+	font-size: 1.05rem;
+	line-height: 1.8;
+	color: #9fabb9;
+}
 
 .trip-beat {
 	padding: 10rem 0 7rem;
@@ -1470,6 +1658,29 @@ main {
 
 	.programming-turn {
 		padding-top: 7rem;
+	}
+
+	.hiking-pair,
+	.exam-reveal,
+	.stopped-home,
+	.programming-2020-grid,
+	.nasa-beat {
+		grid-template-columns: 1fr;
+	}
+
+	.exam-night__photo {
+		width: 100%;
+		margin-left: 0;
+		margin-bottom: 5rem;
+	}
+
+	.stopped-portrait-video {
+		width: min(78vw, 25rem);
+	}
+
+	.nasa-beat {
+		padding-top: 7rem;
+		padding-bottom: 7rem;
 	}
 
 	.story-beat--closing {
