@@ -48,7 +48,7 @@
 		<div class="memory-grid" aria-label="Photos from the VEC years">
 			<figure class="story-photo story-photo--wide">
 				<img src={`${base}/vec-friends-vacation-02.jpg`} alt="A lively group photo from a VEC school vacation" loading="lazy" />
-				<figcaption>Not inside the hostel — phones were not really part of that life. This is one of the memories I still have with VEC friends.</figcaption>
+				<figcaption>One of the memories I still have with my VEC friends.</figcaption>
 			</figure>
 
 			<figure class="story-photo">
@@ -57,8 +57,8 @@
 			</figure>
 
 			<figure class="story-photo">
-				<img src={`${base}/twin-sister-2019.jpg`} alt="A family photo from 2019" loading="lazy" />
-				<figcaption>2019, around the end of our high-school years.</figcaption>
+				<img src={`${base}/twin-sister-2019.jpg`} alt="A photo with my twin sister during the school vacation after our exam results were published" loading="lazy" />
+				<figcaption>With my twin sister during the school vacation, after our results were published and we learned we had earned the overseas trip.</figcaption>
 			</figure>
 		</div>
 	</section>
@@ -126,23 +126,38 @@
 		<p class="story-label">UNIVERSAL STUDIOS</p>
 		<h4>I hate heights.</h4>
 
-		<div class="universal-gallery">
-			<figure class="story-photo">
-				<img src={`${base}/universal-studios-solo-01.jpg`} alt="A 2019 Universal Studios travel photo" loading="lazy" />
-			</figure>
-			<figure class="story-photo story-photo--lower">
-				<img src={`${base}/universal-studios-solo-02.jpg`} alt="Another 2019 Universal Studios travel photo" loading="lazy" />
-			</figure>
-		</div>
-
 		<div class="story-copy">
 			<p>Mountain edges? No.</p>
 			<p>Roller coasters? Also no.</p>
 			<p>But I tried one with my friends anyway.</p>
+		</div>
+
+		<figure class="story-video">
+			<video autoplay muted loop playsinline preload="metadata" aria-label="A short looping clip of the roller coaster at Universal Studios">
+				<source src={`${base}/universal-rollercoaster-loop.mp4`} type="video/mp4" />
+			</video>
+			<figcaption>The ride I was already nervous about.</figcaption>
+		</figure>
+
+		<div class="story-copy story-copy--after-video">
 			<p>
-				There was another ride after that — higher, violet if I remember correctly. My friends went. I didn’t. I ended up walking around by myself for most of the day.
+				Then there was another ride — higher, and cyan if I remember correctly. My friends went. I didn’t.
 			</p>
-			<p class="story-reflection">At the time, I was fine with it.</p>
+			<p>I ended up walking around by myself for most of the day.</p>
+		</div>
+
+		<div class="universal-gallery" aria-label="My solo time around Universal Studios">
+			<figure class="story-photo">
+				<img src={`${base}/universal-studios-solo-01.jpg`} alt="A solo photo from walking around Universal Studios after separating from my friends" loading="lazy" />
+				<figcaption>After separating from the group, I spent most of the day wandering around alone.</figcaption>
+			</figure>
+			<figure class="story-photo story-photo--lower">
+				<img src={`${base}/universal-studios-solo-02.jpg`} alt="Another solo photo from Universal Studios during the same day" loading="lazy" />
+				<figcaption>At the time, I was fine with it.</figcaption>
+			</figure>
+		</div>
+
+		<div class="story-copy">
 			<p class="pull-quote">Looking back? I wish I had gone with them.</p>
 		</div>
 	</section>
