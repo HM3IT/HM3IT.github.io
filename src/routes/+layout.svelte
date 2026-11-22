@@ -1,15 +1,11 @@
 <script lang="ts">
-	import './styles.css';
+	import './journey.css';
 </script>
 
 <svelte:head>
-	<title>HM3IT</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 </svelte:head>
 
-<div>
-	<main>
-		<slot />
-	</main>
-
-	<footer />
-</div>
+<main>
+	<slot />
+</main>
