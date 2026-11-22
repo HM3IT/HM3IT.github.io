@@ -151,6 +151,74 @@ main {
 	opacity: 0.48;
 }
 
+.hero-stars {
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+	pointer-events: none;
+}
+
+.soft-star {
+	position: absolute;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	background: rgba(232, 250, 255, 0.95);
+	box-shadow:
+		0 0 5px rgba(226, 248, 255, 0.95),
+		0 0 16px rgba(121, 210, 255, 0.72),
+		0 0 34px rgba(74, 162, 255, 0.34);
+	animation: star-twinkle 5.8s ease-in-out infinite;
+}
+
+.soft-star::before,
+.soft-star::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	background: linear-gradient(90deg, transparent, rgba(222, 248, 255, 0.72), transparent);
+	transform: translate(-50%, -50%);
+}
+
+.soft-star::before {
+	width: 22px;
+	height: 1px;
+}
+
+.soft-star::after {
+	width: 1px;
+	height: 22px;
+	background: linear-gradient(180deg, transparent, rgba(222, 248, 255, 0.62), transparent);
+}
+
+.soft-star--one {
+	top: 20%;
+	right: 18%;
+	transform: scale(1.25);
+}
+
+.soft-star--two {
+	top: 41%;
+	right: 7%;
+	animation-delay: -2.1s;
+	transform: scale(0.8);
+}
+
+.soft-star--three {
+	top: 67%;
+	left: 11%;
+	animation-delay: -3.8s;
+	transform: scale(0.62);
+}
+
+.soft-star--four {
+	top: 12%;
+	left: 38%;
+	animation-delay: -1.2s;
+	transform: scale(0.48);
+}
+
 .site-nav {
 	position: relative;
 	z-index: 5;
@@ -772,6 +840,11 @@ main {
 	font-size: clamp(2.8rem, 5vw, 5.2rem);
 	letter-spacing: -0.04em;
 	margin-top: 1rem;
+}
+
+@keyframes star-twinkle {
+	0%, 100% { opacity: 0.42; filter: brightness(0.9); }
+	50% { opacity: 1; filter: brightness(1.18); }
 }
 
 @keyframes breathe {
