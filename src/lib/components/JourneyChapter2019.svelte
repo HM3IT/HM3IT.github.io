@@ -145,17 +145,19 @@
 			</p>
 		</div>
 
-		<figure class="story-video story-video--solo">
-			<video autoplay muted loop playsinline preload="metadata" aria-label="A short looping clip from walking around Universal Studios alone">
-				<source src={`${base}/universal-studios-solo-loop.mp4`} type="video/mp4" />
-			</video>
-			<figcaption>After separating from the group, I spent most of the day wandering around alone.</figcaption>
-		</figure>
+		<div class="universal-solo-pair">
+			<figure class="story-video story-video--solo">
+				<video autoplay muted loop playsinline preload="metadata" aria-label="A short looping clip from walking around Universal Studios alone">
+					<source src={`${base}/universal-studios-solo-loop.mp4`} type="video/mp4" />
+				</video>
+				<figcaption>After separating from the group, I spent most of the day wandering around alone.</figcaption>
+			</figure>
 
-		<figure class="story-photo universal-solo-photo">
-			<img src={`${base}/universal-studios-solo.jpg`} alt="A solo photo from Universal Studios after separating from my friends" loading="lazy" />
-			<figcaption>At the time, I was fine with it.</figcaption>
-		</figure>
+			<figure class="story-photo universal-solo-photo">
+				<img src={`${base}/universal-studios-solo.jpg`} alt="A solo photo from Universal Studios after separating from my friends" loading="lazy" />
+				<figcaption>At the time, I was fine with it.</figcaption>
+			</figure>
+		</div>
 
 		<div class="story-copy">
 			<p class="pull-quote">Looking back? I wish I had gone with them.</p>
