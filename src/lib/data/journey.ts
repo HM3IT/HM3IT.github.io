@@ -25,7 +25,8 @@ export const journey: JourneyNode[] = [
 		title: 'The Beginning',
 		summary: 'TUM, football, Java, and the point where programming became more than a subject.',
 		side: 'right',
-		tone: 'turning-point'
+		tone: 'turning-point',
+		expandable: true
 	},
 	{
 		id: 'everything-stopped',
