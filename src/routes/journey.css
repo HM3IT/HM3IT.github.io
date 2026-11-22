@@ -911,6 +911,15 @@ main {
 	aspect-ratio: 4 / 5;
 }
 
+.photo-slot--zani {
+	grid-column: 6 / 13;
+}
+
+.photo-editorial .photo-slot--zani img {
+	aspect-ratio: 16 / 9;
+	object-fit: cover;
+}
+
 .photo-editorial .photo-slot--wide img {
 	aspect-ratio: 16 / 9;
 }
@@ -955,6 +964,19 @@ main {
 
 .story-photo--lower {
 	margin-top: 5rem;
+}
+
+.story-video--solo video {
+	aspect-ratio: 16 / 9;
+}
+
+.universal-solo-photo {
+	width: min(68%, 34rem);
+	margin: 1rem 0 5rem auto;
+}
+
+.universal-solo-photo img {
+	aspect-ratio: 4 / 5;
 }
 
 
@@ -1252,9 +1274,15 @@ main {
 
 	.photo-slot--hero,
 	.photo-slot--small,
+	.photo-slot--zani,
 	.photo-slot--wide {
 		grid-column: 1;
 		margin-top: 0;
+	}
+
+	.universal-solo-photo {
+		width: 100%;
+		margin-left: 0;
 	}
 
 	.story-beat--closing {
