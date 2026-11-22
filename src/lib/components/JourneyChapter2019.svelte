@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { fade } from 'svelte/transition';
+
+	const base = '/images/journey/2019';
 </script>
 
 <div class="chapter" transition:fade={{ duration: 320 }}>
@@ -42,13 +44,51 @@
 				She would travel all that distance for family meetings — sometimes for around an hour with us. Grades are easy to put on paper. That part is harder to show.
 			</p>
 		</div>
-		<figure class="photo-slot photo-slot--portrait">
-			<div class="photo-slot__inner">
-				<span>PHOTO SLOT</span>
-				<strong>VEC / hostel years</strong>
-			</div>
-			<figcaption>Replace later with a real photo from this period.</figcaption>
-		</figure>
+
+		<div class="memory-grid" aria-label="Photos from the VEC years">
+			<figure class="story-photo story-photo--wide">
+				<img src={`${base}/vec-friends-vacation-02.jpg`} alt="A lively group photo from a VEC school vacation" loading="lazy" />
+				<figcaption>Not inside the hostel — phones were not really part of that life. This is one of the memories I still have with VEC friends.</figcaption>
+			</figure>
+
+			<figure class="story-photo">
+				<img src={`${base}/vec-friends-vacation-01.jpg`} alt="A casual VEC friends vacation photo" loading="lazy" />
+				<figcaption>School vacation, away from the strict hostel routine.</figcaption>
+			</figure>
+
+			<figure class="story-photo">
+				<img src={`${base}/twin-sister-2019.jpg`} alt="A family photo from 2019" loading="lazy" />
+				<figcaption>2019, around the end of our high-school years.</figcaption>
+			</figure>
+		</div>
+	</section>
+
+	<section class="artifact-beat">
+		<div class="artifact-heading">
+			<p class="story-label">ON PAPER</p>
+			<h4>The result looked much simpler than the year felt.</h4>
+			<p>
+				Four distinctions, and a ranking I did not expect to become part of the story.
+			</p>
+		</div>
+
+		<div class="artifact-grid">
+			<figure class="artifact-card">
+				<img src={`${base}/mandalay-ranking-top-7.jpg`} alt="Mandalay regional ranking announcement from 2019" loading="lazy" />
+				<figcaption>
+					<span>ARCHIVE · 2019</span>
+					<strong>#7 in Mandalay</strong>
+				</figcaption>
+			</figure>
+
+			<figure class="artifact-card artifact-card--tilted">
+				<img src={`${base}/graduation-certificate.jpg`} alt="Graduation certificate from 2019" loading="lazy" />
+				<figcaption>
+					<span>ARCHIVE · 2019</span>
+					<strong>Graduation certificate</strong>
+				</figcaption>
+			</figure>
+		</div>
 	</section>
 
 	<section class="trip-beat">
@@ -65,28 +105,19 @@
 		</div>
 
 		<div class="photo-editorial">
-			<figure class="photo-slot photo-slot--hero">
-				<div class="photo-slot__inner">
-					<span>PHOTO 01</span>
-					<strong>Merlion · Singapore</strong>
-				</div>
-				<figcaption>First time outside Myanmar.</figcaption>
+			<figure class="story-photo photo-slot--hero">
+				<img src={`${base}/vec-singapore-trip-group.jpg`} alt="VEC trip group photo in Singapore" loading="lazy" />
+				<figcaption>Singapore. First trip outside Myanmar.</figcaption>
 			</figure>
 
-			<figure class="photo-slot photo-slot--small photo-slot--offset">
-				<div class="photo-slot__inner">
-					<span>PHOTO 02</span>
-					<strong>Zani Hostel group</strong>
-				</div>
-				<figcaption>The people I travelled with.</figcaption>
+			<figure class="story-photo photo-slot--small photo-slot--offset">
+				<img src={`${base}/zani-hostel-group.jpg`} alt="Zani Hostel group photo during the trip" loading="lazy" />
+				<figcaption>Zani Hostel group.</figcaption>
 			</figure>
 
-			<figure class="photo-slot photo-slot--wide">
-				<div class="photo-slot__inner">
-					<span>PHOTO 03</span>
-					<strong>Flight · last day</strong>
-				</div>
-				<figcaption>End of the trip.</figcaption>
+			<figure class="story-photo photo-slot--wide">
+				<img src={`${base}/flight-last-day.jpg`} alt="Group photo from the last day of the trip" loading="lazy" />
+				<figcaption>Last day. The trip was ending.</figcaption>
 			</figure>
 		</div>
 	</section>
@@ -94,6 +125,16 @@
 	<section class="story-beat story-beat--closing">
 		<p class="story-label">UNIVERSAL STUDIOS</p>
 		<h4>I hate heights.</h4>
+
+		<div class="universal-gallery">
+			<figure class="story-photo">
+				<img src={`${base}/universal-studios-solo-01.jpg`} alt="A 2019 Universal Studios travel photo" loading="lazy" />
+			</figure>
+			<figure class="story-photo story-photo--lower">
+				<img src={`${base}/universal-studios-solo-02.jpg`} alt="Another 2019 Universal Studios travel photo" loading="lazy" />
+			</figure>
+		</div>
+
 		<div class="story-copy">
 			<p>Mountain edges? No.</p>
 			<p>Roller coasters? Also no.</p>
