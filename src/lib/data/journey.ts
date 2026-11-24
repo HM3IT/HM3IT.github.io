@@ -43,7 +43,8 @@ export const journey: JourneyNode[] = [
 		title: 'Starting Again',
 		summary: 'I stopped waiting, changed university, moved to Yangon, and started building a life on my own.',
 		side: 'right',
-		tone: 'turning-point'
+		tone: 'turning-point',
+		expandable: true
 	},
 	{
 		id: 'first-real-work',
