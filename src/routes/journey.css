@@ -1323,6 +1323,162 @@ main {
 	color: #9fabb9;
 }
 
+/* Chapter 04 · Starting Again */
+.starting-decision,
+.yangon-move,
+.independent-life,
+.yearly-meals,
+.starting-again-closing {
+	max-width: 1050px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.starting-decision,
+.yangon-move,
+.independent-life,
+.yearly-meals {
+	padding: 8rem 0;
+}
+
+.starting-decision {
+	display: grid;
+	grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1.1fr);
+	gap: clamp(3rem, 8vw, 8rem);
+	align-items: center;
+}
+
+.starting-decision__copy h4,
+.yangon-move__heading h4,
+.independent-life__copy h4,
+.yearly-meals__heading h4 {
+	font-family: var(--display);
+	font-weight: 400;
+	font-size: clamp(3rem, 5vw, 5.4rem);
+	line-height: 0.94;
+	letter-spacing: -0.045em;
+	margin: 1rem 0 1.7rem;
+}
+
+.starting-decision__copy > p:not(.story-label),
+.yangon-move__heading > p:not(.story-label):not(.pull-quote),
+.independent-life__copy > p:not(.story-label),
+.yearly-meals__heading > p:not(.story-label) {
+	font-size: 1.02rem;
+	line-height: 1.75;
+	color: #aab7c8;
+}
+
+.imu-enrollment img {
+	aspect-ratio: 16 / 10;
+	object-fit: cover;
+}
+
+.yangon-move {
+	border-top: 1px solid rgba(145, 215, 255, 0.08);
+}
+
+.yangon-move__heading {
+	max-width: 720px;
+}
+
+.apartment-pair {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 1.2rem;
+	align-items: center;
+	margin-top: 5rem;
+}
+
+.apartment-pair .story-video,
+.apartment-pair .story-photo {
+	margin: 0;
+}
+
+.apartment-media video,
+.apartment-media img {
+	display: block;
+	width: 100%;
+	height: auto;
+	min-height: 0;
+	aspect-ratio: auto;
+	object-fit: contain;
+}
+
+.independent-life {
+	border-top: 1px solid rgba(145, 215, 255, 0.08);
+}
+
+.independent-life__copy {
+	max-width: 690px;
+}
+
+.workout-composite {
+	width: 100%;
+	margin: 5rem 0 0;
+}
+
+.workout-composite video {
+	display: block;
+	width: 100%;
+	height: auto;
+	aspect-ratio: auto;
+	object-fit: contain;
+}
+
+.yearly-meals {
+	border-top: 1px solid rgba(145, 215, 255, 0.08);
+}
+
+.yearly-meals__heading {
+	max-width: 760px;
+}
+
+.meal-grid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 0.9rem;
+	margin-top: 5rem;
+}
+
+.meal-grid .story-photo img {
+	aspect-ratio: 1 / 1;
+	min-height: 0;
+	object-fit: cover;
+}
+
+.meal-repeat {
+	font-family: var(--display);
+	font-size: clamp(2.2rem, 4vw, 4rem);
+	line-height: 1.02;
+	letter-spacing: -0.035em;
+	color: #f4fbff;
+	text-align: center;
+	margin: 4rem auto 0;
+}
+
+.starting-again-closing {
+	padding: 11rem 0 12rem;
+	text-align: center;
+}
+
+.starting-again-closing__line {
+	font-family: var(--display);
+	font-size: clamp(3.6rem, 7vw, 7rem);
+	line-height: 0.9;
+	letter-spacing: -0.05em;
+	color: #f4fbff;
+	margin: 1.5rem auto 2.5rem;
+}
+
+.starting-again-closing > p:not(.story-label):not(.starting-again-closing__line) {
+	max-width: 40rem;
+	margin: 1rem auto;
+	font-size: 1.05rem;
+	line-height: 1.8;
+	color: #9fabb9;
+}
+
 .trip-beat {
 	padding: 10rem 0 7rem;
 }
@@ -1683,6 +1839,23 @@ main {
 		padding-bottom: 7rem;
 	}
 
+	.starting-decision,
+	.apartment-pair {
+		grid-template-columns: 1fr;
+	}
+
+	.apartment-pair {
+		gap: 2rem;
+	}
+
+	.meal-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.starting-again-closing {
+		padding-top: 8rem;
+	}
+
 	.story-beat--closing {
 		padding-top: 8rem;
 	}
@@ -1716,6 +1889,10 @@ main {
 
 	.pull-quote {
 		font-size: clamp(2rem, 10vw, 3rem);
+	}
+
+	.meal-grid {
+		grid-template-columns: 1fr;
 	}
 }
 
