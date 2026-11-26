@@ -1490,6 +1490,341 @@ main {
 	color: #9fabb9;
 }
 
+
+/* Chapter 05 · First Real Work */
+.first-work-career,
+.first-work-organization,
+.first-work-iot,
+.first-work-hexcode,
+.first-work-salary,
+.first-work-bsc {
+	max-width: 1050px;
+	margin: 0 auto;
+	padding: 9rem 0;
+}
+
+.chapter--first-work .chapter-intro h3 {
+	max-width: 15ch;
+	font-size: clamp(3.3rem, 6.5vw, 6.9rem);
+}
+
+.chapter--first-work .story-photo img {
+	width: 100%;
+	height: auto;
+	min-height: 0;
+	object-fit: contain;
+}
+
+.first-work-organization,
+.first-work-iot,
+.first-work-hexcode,
+.first-work-salary,
+.first-work-bsc {
+	border-top: 1px solid rgba(145, 215, 255, 0.1);
+}
+
+.first-work-heading {
+	max-width: 740px;
+}
+
+.first-work-heading h4,
+.first-work-salary__copy h4,
+.first-work-bsc__copy h4,
+.hackathon-survival h4 {
+	font-family: var(--display);
+	font-weight: 400;
+	font-size: clamp(3rem, 5vw, 5.4rem);
+	line-height: 0.95;
+	letter-spacing: -0.045em;
+	margin: 1.1rem 0 2rem;
+}
+
+.first-work-prose,
+.hackathon-outcome {
+	color: #aab7c8;
+	font-size: clamp(1rem, 1.35vw, 1.13rem);
+	line-height: 1.78;
+}
+
+.first-work-prose p,
+.hackathon-outcome p {
+	margin: 1.2rem 0;
+}
+
+.first-work-prose strong {
+	color: #eaf7ff;
+	font-weight: 600;
+}
+
+.first-work-prose .first-work-emphasis {
+	font-family: var(--display);
+	font-size: clamp(2rem, 3.4vw, 3.25rem);
+	line-height: 1.12;
+	letter-spacing: -0.035em;
+	color: #f4fbff;
+	margin: 2.2rem 0;
+}
+
+.first-work-career-photos {
+	display: grid;
+	grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+	gap: clamp(1.4rem, 3.5vw, 3rem);
+	align-items: end;
+	margin-top: 5rem;
+}
+
+.first-work-career-photos .story-photo:last-child {
+	margin-bottom: -3rem;
+}
+
+.organization-flow {
+	max-width: 600px;
+	margin: 5rem auto 7rem;
+	padding: 2.5rem clamp(1rem, 4vw, 3rem);
+	background: linear-gradient(145deg, rgba(100, 190, 255, 0.065), rgba(4, 11, 26, 0.3));
+	border: 1px solid rgba(155, 218, 255, 0.13);
+	text-align: center;
+}
+
+.organization-flow__main {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+	padding: 1.25rem;
+}
+
+.organization-flow__main span {
+	color: var(--sky-blue);
+	font-size: 0.64rem;
+	letter-spacing: 0.16em;
+	font-weight: 650;
+}
+
+.organization-flow__main strong {
+	font-family: var(--display);
+	font-size: clamp(1.7rem, 3vw, 2.9rem);
+	font-weight: 400;
+	letter-spacing: -0.035em;
+	color: #f4fbff;
+}
+
+.organization-flow__arrow {
+	color: var(--sky-blue-bright);
+	font-size: 1.65rem;
+	text-shadow: 0 0 20px rgba(101,199,247,.35);
+}
+
+.organization-flow > p {
+	font-size: 0.78rem;
+	line-height: 1.7;
+	color: #8c9aac;
+	margin: 1.8rem 0 0;
+}
+
+.first-work-friends {
+	display: grid;
+	grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+	align-items: center;
+	gap: clamp(2.5rem, 6vw, 6rem);
+}
+
+.first-work-friends .first-work-prose .story-label {
+	margin-bottom: 1.5rem;
+}
+
+.iot-feature {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 1.3rem;
+	align-items: start;
+	margin-top: 5rem;
+}
+
+.iot-feature .story-photo:nth-child(2) {
+	margin-top: 4rem;
+}
+
+.iot-closeups {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 1.3rem;
+	width: min(80%, 52rem);
+	margin: 5rem 0 0 auto;
+}
+
+.iot-award {
+	display: grid;
+	grid-template-columns: minmax(0, 0.76fr) minmax(0, 1.24fr);
+	gap: clamp(3rem, 7vw, 7rem);
+	align-items: center;
+	padding: 11rem 0 2rem;
+}
+
+.iot-award__statement {
+	font-family: var(--display);
+	font-size: clamp(2.7rem, 4.5vw, 4.6rem);
+	line-height: 1.02;
+	letter-spacing: -0.04em;
+	color: #f4fbff;
+	margin: 1.5rem 0;
+}
+
+.iot-award__copy > p:last-child {
+	color: #9eacbc;
+	line-height: 1.8;
+}
+
+.iot-award__photos {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 2rem;
+}
+
+.iot-award__photos .first-work-award-artifact {
+	max-width: 70%;
+	justify-self: end;
+}
+
+.ezmednote-shot {
+	width: min(100%, 58rem);
+	margin: 5rem auto 9rem;
+}
+
+.ezmednote-shot img {
+	border: 1px solid rgba(166, 215, 255, 0.14);
+}
+
+.hackathon-survival {
+	padding: clamp(2rem, 6vw, 5rem);
+	background:
+		radial-gradient(circle at 85% 30%, rgba(94, 193, 255, 0.085), transparent 60%),
+		linear-gradient(145deg, rgba(17, 32, 55, 0.68), rgba(5, 10, 22, 0.9));
+	border: 1px solid rgba(143, 220, 255, 0.11);
+}
+
+.hackathon-survival .first-work-prose {
+	max-width: 690px;
+}
+
+.hackathon-survival__punchline {
+	display: flex;
+	flex-direction: column;
+	gap: 0.6rem;
+	margin: 4rem 0 1.5rem;
+	padding-left: clamp(1rem, 3vw, 2rem);
+	border-left: 2px solid rgba(143, 220, 255, 0.65);
+}
+
+.hackathon-survival__punchline span {
+	font-size: clamp(2.3rem, 5vw, 4.6rem);
+	line-height: 1;
+	font-family: var(--display);
+	letter-spacing: -0.045em;
+	color: #fff;
+}
+
+.hackathon-survival__punchline strong {
+	font-size: clamp(1.1rem, 2.2vw, 1.8rem);
+	font-weight: 450;
+	color: var(--sky-blue);
+}
+
+.hackathon-survival__aside {
+	font-size: 1rem;
+	line-height: 1.75;
+	color: #aab7c8;
+	margin: 2rem 0 0;
+}
+
+.hackathon-outcome {
+	max-width: 700px;
+	margin: 8rem auto 0;
+}
+
+.hackathon-outcome > p:nth-child(2) {
+	font-family: var(--display);
+	font-size: clamp(2.3rem, 4vw, 4rem);
+	line-height: 1.08;
+	letter-spacing: -0.035em;
+	color: #f4fbff;
+}
+
+.first-work-salary,
+.first-work-bsc {
+	display: grid;
+	grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+	gap: clamp(3rem, 8vw, 7rem);
+	align-items: center;
+}
+
+.first-salary-keyboard {
+	max-width: 26rem;
+	margin-left: auto;
+}
+
+.first-work-university {
+	max-width: 29rem;
+	margin-left: auto;
+}
+
+@media (max-width: 820px) {
+	.first-work-career,
+	.first-work-organization,
+	.first-work-iot,
+	.first-work-hexcode,
+	.first-work-salary,
+	.first-work-bsc {
+		padding: 6rem 0;
+	}
+
+	.first-work-career-photos,
+	.first-work-friends,
+	.iot-feature,
+	.iot-award,
+	.first-work-salary,
+	.first-work-bsc {
+		grid-template-columns: 1fr;
+	}
+
+	.first-work-career-photos .story-photo:last-child,
+	.iot-feature .story-photo:nth-child(2) {
+		margin: 0;
+	}
+
+	.iot-closeups {
+		width: 100%;
+	}
+
+	.iot-award {
+		padding-top: 7rem;
+	}
+
+	.first-salary-keyboard,
+	.first-work-university {
+		width: 100%;
+		margin-left: 0;
+	}
+
+	.ezmednote-shot {
+		margin-bottom: 6rem;
+	}
+}
+
+@media (max-width: 520px) {
+	.iot-closeups {
+		grid-template-columns: 1fr;
+	}
+
+	.iot-award__photos .first-work-award-artifact {
+		max-width: 84%;
+	}
+
+	.hackathon-survival {
+		padding: 1.7rem;
+	}
+}
+
+
 .trip-beat {
 	padding: 10rem 0 7rem;
 }
