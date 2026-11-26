@@ -13,7 +13,7 @@
 
 	// Chapters can be many screens tall. Remove the previous chapter before
 	// scrolling, so the browser does not chase a collapsing slide transition.
-	async function navigateTo(node: JourneyNode) {
+	async function navigateTo(node: JourneyNode, focusNext = false) {
 		const previousId = expandedId;
 		const closing = previousId === node.id;
 
@@ -28,6 +28,12 @@
 
 		const target = document.getElementById(`journey-node-${node.id}`);
 		if (!target) return;
+
+		// The "Next" button disappears when its chapter closes; place keyboard
+		// focus on the new chapter's card before moving the viewport.
+		if (focusNext) {
+			target.querySelector<HTMLElement>('.node-card')?.focus({ preventScroll: true });
+		}
 
 		const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 		const changingChapters = previousId !== null && previousId !== node.id;
@@ -80,7 +86,7 @@
 						<span class="node-action">{expandedId === node.id ? 'close chapter ↑' : 'explore chapter ↘'}</span>
 					</button>
 				{:else}
-					<article class="node-card node-card--preview" aria-label={`${node.year}: ${node.title}`}>
+					<article class="node-card node-card--preview" tabindex="-1" aria-label={`${node.year}: ${node.title}`}>
 						<span class="node-year">{node.year}</span>
 						<strong>{node.title}</strong>
 						<span class="node-summary">{node.summary}</span>
@@ -115,7 +121,7 @@
 						<button
 							type="button"
 							class="chapter-next__button"
-							on:click={() => navigateTo(nodes[index + 1])}
+							on:click={() => navigateTo(nodes[index + 1], true)}
 							aria-label={`Continue to ${nodes[index + 1].year}: ${nodes[index + 1].title}`}
 						>
 							<span class="chapter-next__kicker">NEXT ON THE JOURNEY</span>
