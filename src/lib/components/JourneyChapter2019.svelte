@@ -166,6 +166,6 @@
 
 	<footer class="chapter-outro">
 		<p>I didn’t know it then, but a few months later university would start changing everything again.</p>
-		<span>continue the journey ↓</span>
+		<span>END OF CHAPTER</span>
 	</footer>
 </div>
