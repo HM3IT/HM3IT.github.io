@@ -4,7 +4,7 @@
 	const base = '/images/journey/2020';
 </script>
 
-<div class="chapter chapter--stopped" transition:fade={{ duration: 320 }}>
+<div class="chapter chapter--stopped" in:fade={{ duration: 320 }}>
 	<header class="chapter-intro">
 		<p class="chapter-kicker">CHAPTER 03 · 2020</p>
 		<h3>Everything stopped.<br />Programming didn’t.</h3>
