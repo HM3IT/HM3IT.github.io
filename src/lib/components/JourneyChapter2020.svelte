@@ -134,6 +134,6 @@
 
 	<footer class="chapter-outro">
 		<p>Eventually I stopped waiting for TUM to reopen and made another decision.</p>
-		<span>continue the journey ↓</span>
+		<span>END OF CHAPTER</span>
 	</footer>
 </div>
