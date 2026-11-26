@@ -50,9 +50,10 @@ export const journey: JourneyNode[] = [
 		id: 'first-real-work',
 		year: '2023',
 		title: 'First Real Work',
-		summary: 'Internships, my first developer role, and the beginning of understanding how real teams actually work.',
+		summary: 'I wanted Marketing, landed in Operations, built AI software in Yangon, and bought a keyboard with my first salary.',
 		side: 'left',
-		tone: 'turning-point'
+		tone: 'turning-point',
+		expandable: true
 	},
 	{
 		id: 'moving-not-growing',
