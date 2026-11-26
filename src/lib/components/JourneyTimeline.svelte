@@ -40,7 +40,7 @@
 
 		target.scrollIntoView({
 			// A long animated scroll over several screenfuls is disorienting.
-			behavior: reducedMotion || changingChapters ? 'instant' : 'smooth',
+			behavior: reducedMotion || changingChapters ? ('instant' as ScrollBehavior) : 'smooth',
 			block: 'start',
 			inline: 'nearest'
 		});
