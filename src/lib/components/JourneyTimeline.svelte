@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { slide } from 'svelte/transition';
+	import { tick } from 'svelte';
 	import JourneyChapter2019 from './JourneyChapter2019.svelte';
 	import JourneyChapterBeginning from './JourneyChapterBeginning.svelte';
 	import JourneyChapter2020 from './JourneyChapter2020.svelte';
@@ -9,10 +9,35 @@
 
 	export let nodes: JourneyNode[] = [];
 	let expandedId: string | null = null;
+	let navigationId = 0;
 
-	function toggle(node: JourneyNode) {
-		if (!node.expandable) return;
-		expandedId = expandedId === node.id ? null : node.id;
+	// Chapters can be many screens tall. Remove the previous chapter before
+	// scrolling, so the browser does not chase a collapsing slide transition.
+	async function navigateTo(node: JourneyNode) {
+		const previousId = expandedId;
+		const closing = previousId === node.id;
+
+		expandedId = closing || !node.expandable ? null : node.id;
+		const requestId = ++navigationId;
+
+		// The close button is already in view; don't move the reader.
+		if (closing) return;
+
+		await tick();
+		if (requestId !== navigationId) return;
+
+		const target = document.getElementById(`journey-node-${node.id}`);
+		if (!target) return;
+
+		const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+		const changingChapters = previousId !== null && previousId !== node.id;
+
+		target.scrollIntoView({
+			// A long animated scroll over several screenfuls is disorienting.
+			behavior: reducedMotion || changingChapters ? 'instant' : 'smooth',
+			block: 'start',
+			inline: 'nearest'
+		});
 	}
 </script>
 
@@ -35,6 +60,7 @@
 				class:node-muted={expandedId !== null && expandedId !== node.id}
 				class:node-active={expandedId === node.id}
 				class="journey-node"
+				id={`journey-node-${node.id}`}
 			>
 				<div class="node-dot-wrap" aria-hidden="true">
 					<span class="node-dot"></span>
@@ -44,7 +70,7 @@
 					<button
 						class="node-card node-card--button"
 						type="button"
-						on:click={() => toggle(node)}
+						on:click={() => navigateTo(node)}
 						aria-expanded={expandedId === node.id}
 						aria-controls={`chapter-${node.id}`}
 					>
@@ -63,24 +89,39 @@
 				{/if}
 
 				{#if expandedId === node.id && node.id === 'strong-finish'}
-					<div class="node-expansion" id={`chapter-${node.id}`} transition:slide={{ duration: 480 }}>
+					<div class="node-expansion" id={`chapter-${node.id}`}>
 						<JourneyChapter2019 />
 					</div>
 				{:else if expandedId === node.id && node.id === 'the-beginning'}
-					<div class="node-expansion" id={`chapter-${node.id}`} transition:slide={{ duration: 480 }}>
+					<div class="node-expansion" id={`chapter-${node.id}`}>
 						<JourneyChapterBeginning />
 					</div>
 				{:else if expandedId === node.id && node.id === 'everything-stopped'}
-					<div class="node-expansion" id={`chapter-${node.id}`} transition:slide={{ duration: 480 }}>
+					<div class="node-expansion" id={`chapter-${node.id}`}>
 						<JourneyChapter2020 />
 					</div>
 				{:else if expandedId === node.id && node.id === 'starting-again'}
-					<div class="node-expansion" id={`chapter-${node.id}`} transition:slide={{ duration: 480 }}>
+					<div class="node-expansion" id={`chapter-${node.id}`}>
 						<JourneyChapter2021 />
 					</div>
 				{:else if expandedId === node.id && node.id === 'first-real-work'}
-					<div class="node-expansion" id={`chapter-${node.id}`} transition:slide={{ duration: 480 }}>
+					<div class="node-expansion" id={`chapter-${node.id}`}>
 						<JourneyChapter2023 />
+					</div>
+				{/if}
+
+				{#if expandedId === node.id && index < nodes.length - 1}
+					<div class="chapter-next">
+						<button
+							type="button"
+							class="chapter-next__button"
+							on:click={() => navigateTo(nodes[index + 1])}
+							aria-label={`Continue to ${nodes[index + 1].year}: ${nodes[index + 1].title}`}
+						>
+							<span class="chapter-next__kicker">NEXT ON THE JOURNEY</span>
+							<span class="chapter-next__title">{nodes[index + 1].year} · {nodes[index + 1].title}</span>
+							<span class="chapter-next__arrow" aria-hidden="true">↘</span>
+						</button>
 					</div>
 				{/if}
 			</div>
