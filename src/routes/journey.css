@@ -1724,9 +1724,18 @@ main {
 	margin: 1.5rem 0;
 }
 
-.iot-award__copy > p:last-child {
+.iot-award__copy > p:not(.story-label):not(.iot-award__statement):not(.iot-award__payoff) {
 	color: #9eacbc;
 	line-height: 1.8;
+}
+
+.iot-award__payoff {
+	font-family: var(--display);
+	font-size: clamp(2rem, 3.4vw, 3.4rem);
+	line-height: 1.1;
+	letter-spacing: -0.04em;
+	color: var(--sky-blue-bright);
+	margin: 1.4rem 0 2rem;
 }
 
 .iot-award__photos {
