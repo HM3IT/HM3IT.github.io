@@ -105,7 +105,10 @@
 					The idea was simple: use room temperature to control when an air conditioner turns on and off, helping save electricity.
 				</p>
 				<p>
-					And the project received an <strong>Excellence Award</strong>.
+					There was one small problem: the university didn't give us a budget for the project materials. We had to pay for them ourselves. A lot of us joked about that.
+				</p>
+				<p>
+					And me? I was the guy trying to save every penny. The same guy who had been eating eggs and vegetables on repeat to save money. So yes, buying parts out of my own pocket hurt a little. :&gt;
 				</p>
 			</div>
 		</div>
@@ -137,7 +140,14 @@
 				<p class="story-label">EXCELLENCE AWARD · 2023</p>
 				<p class="iot-award__statement">A small project. A real moment of pride.</p>
 				<p>
-					I like having the actual photos and award from this day. They remind me that this wasn't just another assignment I submitted and forgot about.
+					After all that work (and all those out-of-pocket expenses), the project received an <strong>Excellence Award</strong>. I was genuinely proud of what I'd built.
+				</p>
+				<p>
+					But I won't pretend the money wasn't part of my happiness too. For someone counting every penny, that award felt even sweeter.
+				</p>
+				<p class="iot-award__payoff">Money money. :&gt;</p>
+				<p>
+					I still like having the photos and award from that day. They remind me that it wasn't just another assignment I submitted and forgot about.
 				</p>
 			</div>
 			<div class="iot-award__photos">
