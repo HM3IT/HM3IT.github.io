@@ -4,7 +4,7 @@
 	const base = '/images/journey/2019';
 </script>
 
-<div class="chapter" transition:fade={{ duration: 320 }}>
+<div class="chapter" in:fade={{ duration: 320 }}>
 	<header class="chapter-intro">
 		<p class="chapter-kicker">CHAPTER 01 · 2019</p>
 		<h3>Four distinctions.<br />English was the scary part.</h3>
