@@ -121,6 +121,6 @@
 
 	<footer class="chapter-outro">
 		<p>A couple of years later, university and work would start colliding for real.</p>
-		<span>continue the journey ↓</span>
+		<span>END OF CHAPTER</span>
 	</footer>
 </div>
