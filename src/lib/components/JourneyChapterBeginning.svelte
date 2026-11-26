@@ -102,6 +102,6 @@
 
 	<footer class="chapter-outro">
 		<p>Then 2020 arrived, and the version of university I had just started getting used to suddenly stopped.</p>
-		<span>continue the journey ↓</span>
+		<span>END OF CHAPTER</span>
 	</footer>
 </div>
