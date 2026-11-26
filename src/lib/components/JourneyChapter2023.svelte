@@ -262,6 +262,6 @@
 
 	<footer class="chapter-outro">
 		<p>I had started earning money from writing code. I still had plenty to learn.</p>
-		<span>continue the journey ↓</span>
+		<span>END OF CHAPTER</span>
 	</footer>
 </div>
