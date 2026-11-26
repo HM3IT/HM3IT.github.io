@@ -4,7 +4,7 @@
 	const base = '/images/journey/2023';
 </script>
 
-<div class="chapter chapter--first-work" transition:fade={{ duration: 320 }}>
+<div class="chapter chapter--first-work" in:fade={{ duration: 320 }}>
 	<header class="chapter-intro">
 		<p class="chapter-kicker">CHAPTER 05 · 2023</p>
 		<h3>I wanted Marketing.<br />I got Operations.</h3>
