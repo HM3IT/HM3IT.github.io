@@ -36,7 +36,7 @@
     Commitment: Designed to reduce manual workload and errors while increasing efficiency for healthcare providers. 
     Achievements: Significantly improved report accuracy and cut documentation time for medical professionals.`,
 			isPrivateApp: true,
-			devYear: 2024
+			devYear: 2023
 		},
 		{
 			title: 'Fedfunl (U.S. GOV Contracting Portal)',
