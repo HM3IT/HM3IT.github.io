@@ -72,7 +72,6 @@
 			<video autoplay muted loop playsinline preload="metadata" aria-label="A six-panel collection of home workout clips from the Yangon period">
 				<source src={`${base}/home-workout-combine.mp4`} type="video/mp4" />
 			</video>
-			<figcaption>Six little clips from the same home-workout period, playing together.</figcaption>
 		</figure>
 	</section>
 
