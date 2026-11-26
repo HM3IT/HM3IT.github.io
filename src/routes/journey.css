@@ -1384,15 +1384,26 @@ main {
 
 .apartment-pair {
 	display: grid;
-	grid-template-columns: repeat(2, minmax(0, 1fr));
-	gap: 1.2rem;
-	align-items: center;
+	grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.35fr);
+	gap: clamp(1.5rem, 4vw, 3.5rem);
+	align-items: start;
 	margin-top: 5rem;
 }
 
 .apartment-pair .story-video,
 .apartment-pair .story-photo {
 	margin: 0;
+}
+
+.apartment-pair .story-video {
+	width: 100%;
+	max-width: 20rem;
+	justify-self: end;
+}
+
+.apartment-pair .story-photo {
+	width: 100%;
+	justify-self: start;
 }
 
 .apartment-media video,
@@ -1846,6 +1857,15 @@ main {
 
 	.apartment-pair {
 		gap: 2rem;
+	}
+
+	.apartment-pair .story-video {
+		width: min(100%, 20rem);
+		justify-self: center;
+	}
+
+	.apartment-pair .story-photo {
+		justify-self: stretch;
 	}
 
 	.meal-grid {
