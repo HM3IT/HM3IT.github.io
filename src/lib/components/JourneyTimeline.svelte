@@ -4,6 +4,7 @@
 	import JourneyChapterBeginning from './JourneyChapterBeginning.svelte';
 	import JourneyChapter2020 from './JourneyChapter2020.svelte';
 	import JourneyChapter2021 from './JourneyChapter2021.svelte';
+	import JourneyChapter2023 from './JourneyChapter2023.svelte';
 	import type { JourneyNode } from '$lib/data/journey';
 
 	export let nodes: JourneyNode[] = [];
@@ -77,11 +78,15 @@
 					<div class="node-expansion" id={`chapter-${node.id}`} transition:slide={{ duration: 480 }}>
 						<JourneyChapter2021 />
 					</div>
+				{:else if expandedId === node.id && node.id === 'first-real-work'}
+					<div class="node-expansion" id={`chapter-${node.id}`} transition:slide={{ duration: 480 }}>
+						<JourneyChapter2023 />
+					</div>
 				{/if}
 			</div>
 
-			{#if index === 3 && expandedId === null}
-				<p class="prototype-note">The first four chapters are interactive. The remaining nodes still show the journey backbone.</p>
+			{#if index === 4 && expandedId === null}
+				<p class="prototype-note">The first five chapters are interactive. The remaining nodes still show the journey backbone.</p>
 			{/if}
 		{/each}
 	</div>
